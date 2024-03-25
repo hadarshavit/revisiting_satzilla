@@ -6,3 +6,4 @@ SAT-feature-computation code contains the new SATZilla feature extraction tool.
 Recompile by running make, then the executable features will be created
 To compute features, simply run ./features [-base] [-dia] [-ls] [-lp] [-lobjois] INFILE OUTFILE TIMEOUT
 
+A more detailed README file will be added in the near future
