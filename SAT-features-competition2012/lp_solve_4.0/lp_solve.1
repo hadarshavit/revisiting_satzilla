@@ -1,0 +1,317 @@
+.\" 						-*-nroff-*-
+.TH LP_SOLVE 1 "June 1, 2003"
+.SH NAME
+lp_solve \- solve (mixed integer) linear programming problems
+.SH SYNOPSIS
+\fBlp_solve\fP [\fIoptions\fP] [[<] \fIinput-file\fP]
+.SH OPTIONS
+.TP 1.2i
+-v\fIlevel\fP
+Set verbosity:
+.nf
+   -v1: CRITICAL
+   -v2: SEVERE
+   -v3: IMPORTANT (default)
+   -v4: NORMAL
+   -v5: DETAILED
+   -v6: FULL
+.fi
+If level not provided (-v) then -v4 (NORMAL) is assumed.
+.TP
+-time
+Print CPU time to parse input and to calculate result.
+.TP
+-timeout \fIsec\fP
+Timeout after \fIsec\fP seconds when not solution found.
+.TP
+-S\fIdetail\fP
+Print solution. If \fIdetail\fP omitted, then -S2 is used.
+.nf
+   -S0: Print nothing
+   -S1: Only objective value
+   -S2: Obj value+variables (default)
+   -S3: Obj value+variables+constraints
+   -S4: Obj value+variables+constraints+duals
+   -S5: Obj value+variables+constraints+duals+lp model
+   -S6: Obj value+variables+constraints+duals+lp model+scales
+.fi
+.TP
+-h
+Help mode, prints the usage.
+.TP
+-d
+Debug mode, all intermediate results are printed, and the branch-and-bound
+decisions in case of (mixed) integer problems.
+.TP
+-min
+Minimize the objective function. This is the default for MPS input.
+In lp_solve format you can specify minimization or maximization in the input
+file as well. The command line option overrides.
+.TP
+-max
+Maximize the objective function. This is the default for lp_solve format
+input.
+In lp_solve format you can specify minimization or maximization in the input
+file as well. The command line option overrides.
+.TP
+-p
+Only functional for pure LP problems. Print the values of the dual
+variables. They are named r_1 until r_XXXXX unless specified by the user.
+Note that bounds (constraints on just one variable) also have dual values
+though they are not given a row in the matrix.
+.TP
+-b \fIbound\fP
+Specify an upper (when minimizing) or lower (when maximizing) limit for the
+value of the objective function to
+the program. Only useful for (mixed) integer problems.  If close enough, may
+speed up the calculations. The same result can be obtained by adding an extra
+constraint to the problem.
+.TP
+-c
+When branching in MILP problems, take the ceiling of the selected non-integer
+variable first instead of the floor. This can influence the speed of MILP
+problems.
+.TP
+-ca
+When branching in MILP problems, let the algorithm decide if it should take
+the floor or ceiling value first. This can influence the speed of MILP
+problems.
+.TP
+-B\fIrule\fP
+Specify branch-and-bound rule:
+.nf
+   -B0: Select Lowest indexed non-integer column (default)
+   -B1: Select Random non-integer column
+   -B2: Select Largest deviation from an integer value
+   -B3: Select Best ???
+   -B4: Select Median value deviation from an integer value
+   -B5: Select Greedy ???
+.fi
+.TP
+-e \fIvalue\fP
+\fIvalue\fP is the tolerance of the test for whether the value of a variable
+is really integer. \fIvalue\fP must be between 0 and 0.5. Default value is 1e-6
+and should be OK for most applications. Of course only useful for MILP
+problems.
+.TP
+-i
+Print all intermediate valid solutions. Can give you useful
+solutions even if the total run time is too long.
+Only useful for (mixed) integer problems.
+.TP
+-s[\fImode\fP]
+Use automatic problem scaling:
+.nf
+	  -s:
+	 -s0: Numerical range-based scaling
+	 -s1: Geometric scaling
+	 -s2: Curtis-reid scaling
+.fi
+This might improve the numerical
+stability of your problem.
+.TP
+-sp
+Also do power scaling.
+.TP
+-sl
+Also do Lagrange scaling.
+.TP
+-si
+Also do Integer scaling.
+.TP
+-I
+Print info after reinverting.
+.TP
+-t
+Trace pivot selection.
+.TP
+-lp
+Read from LP file (default).
+.TP
+-mps
+Read from MPS file instead of lp file. For a short introduction to MPS see
+http://users.iems.nwu.edu/~neos/mps_format.txt
+.TP
+-parse_only
+Parse input file but do not calculate (ie check).
+.TP
+-presolve
+Presolve problem before optimizing.
+.TP
+-improve\fIlevel\fP
+Iterative improvement level:
+.nf
+	 -improve0: none (default)
+	 -improve1: FTRAN only
+	 -improve2: BTRAN only
+	 -improve3: FTRAN + BTRAN
+.fi
+.TP
+-degen
+Use random perturbations to reduce degeneracy, can increase numerical
+instability.
+.TP
+-trej \fITrej\fP
+Set minimum pivot value to \fITrej\fP.
+.SH DESCRIPTION
+The linear programming problem can be formulated as: Solve A.x >= V1, with
+V2.x maximal. A is a matrix, x a vector of (nonnegative) variables, V1 a
+vector called the right hand side, and V2 a vector specifying the objective
+function.
+.br
+Any number of the variables may be specified to be of type integer.
+.br
+This program solves problems of this kind. It is slightly more general than
+the above problem, in that every row of A (specifying one constraint) can have
+its own (in)equality, <=, >= or =. The result specifies values for all
+variables.
+.br
+Uses a 'Simplex' algorithm and sparse matrix methods, for pure LP problems.
+If one or more of the variables is declared integer, the Simplex algorithm is
+iterated with a branch and bound algorithm, until the desired optimal
+solution is found.
+.br
+The "-i" option will print all intermediate valid solutions.
+.SH "INPUT SYNTAX"
+The default input syntax is a set of algebraic expressions and "int"
+declarations in the following order:
+.sp
+<objective function>
+.br
+<constraint>*
+.br
+<declaration>*
+.sp
+where:
+.TP 0.2i
+-
+<objective function> is a linear combination of variables, ending with a
+semicolon, optionally preceded by "max: " or "min: " to indicate whether you
+want it to be minimized or maximized. The case is not important, "Max:" or
+"MAX:" will work as well. Maximization is the default. Alternatives are minimise,
+minimize, maximise, Maximize
+.TP
+-
+<constraint> is an optional constraint name followed by a colon plus a
+linear combination of variables and constants or (just one) constraint
+name followed by a colon (a range) or (just one) variable name
+without a colon (a bound), followed by a relational operator, followed
+again by a linear combination of variables and constants, ending with a
+semicolon. The relational operator can be any of the following:
+"<" "<=" "=" ">" ">=". There is no semantic difference between "<" and "<="
+nor between ">" and ">=" (even for integer variables!).
+.TP
+-
+<declaration> is of one of the forms:
+  To define variables as integer:
+   "int"
+   var [","] var [","] var ... ";"
+
+  To define variables as semi-cont:
+   "sec"
+   var [","] var [","] var ... ";"
+
+  To define Special Ordered Sets (SOS):
+   "sos"
+   [sosdescr:] [","] var[:weight] [","] var[:weight] [","] var[:weight] ... "<[=]" sostype[:sosorder] ";" ...
+  or:
+   "sosx"
+   [sosdescr:] var[:weight] [","] var[:weight] [","] var[:weight] ... ";" ...
+.TP
+-
+A \fIvar\fP must start with a letter (either upper or lower case),
+and may contain any number of additional letters, numerals, or
+characters from this list: _[]{}/.&#$%~'@^
+.TP
+-
+Comments can be used with the /* */ syntax, just like in C.
+It can be put anywhere in the file and even over multiple lines.
+lp_solve 4.0.1.11 and newer also supports the C++ line comment //
+.TP
+-
+Empty lines are also allowed.
+.sp
+So, the simplest linear problem consists of an objective function.
+.SH EXAMPLE
+The simple problem:
+.sp
+x1 >= 1
+.br
+x2 >= 1
+.br
+x1 + x2 >= 2
+.br
+minimize x1 + x2 (= maximize -(x1 + x2)), with x1 integer
+.sp
+can be written as follows:
+.sp
+-x1 -x2;
+.br
+(or min: x1 + x2;)
+.br
+x1 > 1;
+.br
+x2 > 1;
+.br
+x1 + x2 > 2;
+.br
+int x1;
+.sp
+The correct result for (x1, x2) is of course (1, 1).
+.br
+With the -mps option, \fBlp_solve\fP will accept MPS as input format.
+.SH BUGS
+.TP
+-
+Sometimes problems are numerically unstable, and the unavoidable rounding
+errors inside \fBlp_solve\fP will cause aborts. It is very hard to give general
+solutions to this problem, but try to keep all values in your problem in the
+order of magnitude of 1 by proper scaling. This is almost always better than
+using \fBlp_solve\fPs built-in scaling (with -s). Almost parallel constraints are
+also not very good for numerical stability. Use "lp_solve -v" and observe the
+values of the pivots to see if there are any dangerously large or low numbers
+there.
+.br
+Building \fBlp_solve\fP with long doubles (see the Makefile) can help to increase
+numerical stability, but will also increase the run time considerably.
+.br
+You can consult the author as well if you encounter numerical problems, but
+please remember that it is very easy to formulate an infeasible LP problem, so
+be sure there is a solution.
+.SH SEE ALSO
+The implementation of the simplex kernel was mainly based on:
+.br
+W. Orchard-Hays: "Advanced Linear Programming Computing Techniques",
+McGraw-Hill 1968
+.br
+The mixed integer branch and bound part was inspired by:
+.br
+section 6.4 of "An Introduction to Linear Programming and Game Theory" by
+Paul R. Thie, second edition published by John Wiley and Sons in 1988.
+.br
+This book refers to:
+.br
+Dakin, R.J., "A Tree Search Algorithm for MILP Problems", Comput. J., 8 (1965)
+pp. 250-255
+.SH ACKNOWLEDGEMENTS
+The work of Jeroen Dirks made the transition from the basic version 1.5 to
+the full version 2.0 possible. He contributed the procedural interface, a
+built-in MPS reader, and many fixes and enhancements to the code.
+Most of the changes between 3.2 and 4.0 were done by Kjell Eikland and
+Peter Notebaert.
+.SH CONTRIBUTED BY
+M.R.C.M. Berkelaar
+.br
+Eindhoven University of Technology
+.br
+Design Automation Section
+.br
+P.O. Box 513
+.br
+NL-5600 MB Eindhoven, The Netherlands
+.br
+phone +31-40-2474792
+.br
+E-mail: michel@es.ele.tue.nl
+.SH STATUS
+Use at own risk. Bug reports are welcome, as well as success stories.

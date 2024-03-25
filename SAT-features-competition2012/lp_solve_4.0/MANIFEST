@@ -1,0 +1,1147 @@
+total 967
+-rw-rw-rw-   1 user     group       54996 Jan 25 23:35 CHANGELOG
+-rw-rw-rw-   1 user     group        6425 Jan 25 23:33 FAQ.txt
+-rw-rw-rw-   1 user     group       82600 Jan 16  2001 HARTMUT_DOCUMENTATION
+-rw-rw-rw-   1 user     group       26428 Jan 16  2001 LGPL.txt
+-rw-rw-rw-   1 user     group       26428 Jan 16  2001 LICENSE
+-rw-rw-rw-   1 user     group           0 Jan 26 00:41 MANIFEST
+-rw-rw-rw-   1 user     group       21403 Jan 19  2003 MIPLIB_RESULTS
+-rw-rw-rw-   1 user     group        4868 Jan 16  2001 MPS.description
+-rw-rw-rw-   1 user     group        4692 Jan 17 17:55 Makefile.AIX
+-rw-rw-rw-   1 user     group        4671 Jan 17 17:57 Makefile.linux
+-rw-rw-rw-   1 user     group        5305 Jan 17 17:53 Makefile.msc
+-rw-rw-rw-   1 user     group        4776 Jan 17 17:56 Makefile.sco5
+-rw-rw-rw-   1 user     group        4690 Jan 17 17:56 Makefile.unix
+-rw-rw-rw-   1 user     group       21736 Jan 19  2003 NETLIB_RESULTS
+-rw-rw-rw-   1 user     group         831 Nov 16  2002 README
+-rw-rw-rw-   1 user     group      156740 Oct  5  2002 SOSInterpolation.pdf
+-rw-rw-rw-   1 user     group        8961 Jan 17 15:00 debug.c
+-rw-rw-rw-   1 user     group         275 Dec 18  2002 debug.h
+-rw-rw-rw-   1 user     group         389 Dec 18  2002 declare.h
+-rw-rw-rw-   1 user     group        7971 Jan  4 19:20 demo.c
+drwxrwxrwx   1 user     group           0 Jan  1 23:29 extra
+-rw-rw-rw-   1 user     group       37051 Jan 25 22:05 fortify.c
+-rw-rw-rw-   1 user     group        4616 Dec 29 18:17 fortify.h
+-rw-rw-rw-   1 user     group        3109 Jan 17 15:14 hash.c
+-rw-rw-rw-   1 user     group         627 Dec 23 23:15 hash.h
+-rw-rw-rw-   1 user     group        3115 Jan 25 01:08 lex.l
+-rw-rw-rw-   1 user     group       13382 Jan 26 00:38 lp.y
+-rw-rw-rw-   1 user     group        1751 Dec 25 16:07 lp2mps.c
+drwxrwxrwx   1 user     group           0 Nov 17  2002 lp_examples
+-rw-rw-rw-   1 user     group        9482 Jan 25 23:38 lp_solve.1
+-rw-rw-rw-   1 user     group       14025 Jan 25 23:26 lp_solve.c
+-rw-rw-rw-   1 user     group       12662 Jan 25 23:38 lp_solve.man
+-rw-rw-rw-   1 user     group       20785 Nov 16 22:19 lp_solve.ps
+-rw-rw-rw-   1 user     group          39 Apr 20  2003 lpdll.h
+-rw-rw-rw-   1 user     group      139969 Jan 26 00:37 lpkit.c
+-rw-rw-rw-   1 user     group       37821 Jan 17 18:57 lpkit.h
+-rw-rw-rw-   1 user     group        2441 Dec 21 21:54 lpsolve.rc
+-rw-rw-rw-   1 user     group        2062 Dec 21 16:56 mps2lp.c
+-rw-rw-rw-   1 user     group         163 Jan 26 00:20 patchlevel.h
+-rw-rw-rw-   1 user     group       10101 Jan 17 15:00 presolve.c
+-rw-rw-rw-   1 user     group       28490 Jan 26 00:32 read.c
+-rw-rw-rw-   1 user     group         879 Jan 26 00:32 read.h
+-rw-rw-rw-   1 user     group       25943 Jan 17 15:04 readmps.c
+-rw-rw-rw-   1 user     group         396 Aug  7  2002 resource.h
+-rw-rw-rw-   1 user     group      108378 Jan 17 15:02 solve.c
+-rw-rw-rw-   1 user     group        1822 Dec 18  2002 ufortify.h
+-rw-rw-rw-   1 user     group       37696 Jan 25 22:06 windll.c
+-rw-rw-rw-   1 user     group        6398 Jan 10 18:20 windll.def
+
+extra=:
+total 2782
+-rw-rw-rw-   1 user     group        1935 Dec  1 21:38 120'''.lp
+-rw-rw-rw-   1 user     group        6559 Dec  1 21:37 120''.mps
+-rw-rw-rw-   1 user     group        8885 Dec  1 21:09 120'.MPS
+-rw-rw-rw-   1 user     group        1935 Dec  1 21:09 120'.lp
+-rw-rw-rw-   1 user     group         946 Dec  1 21:21 120'.out
+-rw-rw-rw-   1 user     group           0 Dec  1 21:29 120'Dual.MPS
+-rw-rw-rw-   1 user     group        8885 Dec  1 21:04 120.MPS
+-rw-rw-rw-   1 user     group        1995 Dec  1 21:29 120.lp
+-rw-rw-rw-   1 user     group         907 Dec  1 21:21 120.out
+-rw-rw-rw-   1 user     group         340 Dec  4 23:13 A.LP
+-rw-rw-rw-   1 user     group         575 Apr 23  1997 A0.MPS
+-rw-rw-rw-   1 user     group         539 Nov 11 00:43 A1.LP
+-rw-rw-rw-   1 user     group         711 Nov 10 21:18 A1.MPS
+-rw-rw-rw-   1 user     group         269 Sep 29  2002 A2.LP
+-rw-rw-rw-   1 user     group         643 Apr 23  1997 A2.MPS
+-rw-rw-rw-   1 user     group         682 Apr 25  1997 A3.MPS
+-rw-rw-rw-   1 user     group         205 Mar  8  2003 A6.LP
+-rw-rw-rw-   1 user     group         261 Nov 15 18:45 A9'.LP
+-rw-rw-rw-   1 user     group         261 Nov 15 18:49 A9.LP
+-rw-rw-rw-   1 user     group       17780 Jan 12  2003 ADLITTLE.mps
+-rw-rw-rw-   1 user     group       17141 Jan 12  2003 ADLITTLE2.mps
+-rwxrwxrwx   1 user     group         218 Jun  1  2003 BAK.BAT
+-rw-rw-rw-   1 user     group         298 Nov 15 00:15 EX4SOS''.LP
+-rw-rw-rw-   1 user     group           0 Nov 14 22:57 EX4SOS''Dual.MPS
+-rw-rw-rw-   1 user     group         150 Nov 18 00:04 EX4SOS'.LP
+-rw-rw-rw-   1 user     group           0 Nov 14 22:43 EX4SOS'Dual.MPS
+-rw-rw-rw-   1 user     group         314 Jan 25 21:22 EX4SOS.LP
+-rw-rw-rw-   1 user     group           0 Nov 14 21:29 EX4SOSDual.MPS
+drwxrwxrwx   1 user     group           0 Jul  9  2003 Excel
+-rw-rw-rw-   1 user     group       17920 Sep 21  2002 Kjell.doc
+-rw-rw-rw-   1 user     group        9521 Sep 21  2002 Kjell.rtf
+-rwxrwxrwx   1 user     group         138 Jun 18  1997 LINK.BAT
+-rw-rw-rw-   1 user     group        3874 Sep 20  2002 LPKIT.DSK
+-rw-rw-rw-   1 user     group        7839 Sep 20  2002 LPKIT.PRJ
+-rw-rw-rw-   1 user     group     1108528 Jun  1  2003 LP_SOLVE_DEV.sq
+-rw-rw-rw-   1 user     group        3336 Jul  6  1997 MAKEFILE.DOS
+-rw-rw-rw-   1 user     group        3489 Nov  7  1998 MAKEFILE.UX
+-rw-rw-rw-   1 user     group         241 Nov 15 00:55 PENO9.LP
+-rw-rw-rw-   1 user     group         184 Apr 23  1997 SETCC
+-rwxrwxrwx   1 user     group         504 Apr 28  1997 SETHC.BAT
+-rwxrwxrwx   1 user     group         177 Jan 17 17:49 a.bat
+-rw-rw-rw-   1 user     group         294 Jan 18 21:17 a.lpt
+-rw-rw-rw-   1 user     group         878 Jan 25 22:49 a.mps
+-rw-rw-rw-   1 user     group        1125 Jul 20  2003 a1
+-rw-rw-rw-   1 user     group        1125 Jul 20  2003 a2
+-rw-rw-rw-   1 user     group          77 Dec 18  2002 a3.lp
+-rw-rw-rw-   1 user     group         321 Jan 19  2003 a4.lp
+-rw-rw-rw-   1 user     group         697 May  4  2003 a4.mps
+-rw-rw-rw-   1 user     group         307 May  4  2003 a5.lp
+-rw-rw-rw-   1 user     group         377 Jan 25 21:08 aa.lp
+drwxrwxrwx   1 user     group           0 Jun  7  2003 ampl
+drwxrwxrwx   1 user     group           0 Jan 22  2003 api
+-rw-rw-rw-   1 user     group         244 Feb  1  2003 b.lp
+-rw-rw-rw-   1 user     group         193 Jan 18 02:08 b.lpt
+drwxrwxrwx   1 user     group           0 Apr 19  2003 c
+-rw-rw-rw-   1 user     group         262 Jul 21  2003 c.lp
+-rw-rw-rw-   1 user     group         171 Jan 18 19:29 c.lpt
+drwxrwxrwx   1 user     group           0 Mar 22  2003 cs.net
+-rw-rw-rw-   1 user     group         115 Dec  6 16:22 d.LP
+-rw-rw-rw-   1 user     group         654 Jan 18 02:32 d.lpt
+drwxrwxrwx   1 user     group           0 Sep 28  2002 demo
+-rwxrwxrwx   1 user     group         117 Jan  7  2003 distrib.bat
+-rw-rw-rw-   1 user     group         106 Jan 26 00:13 distrib.txt
+drwxrwxrwx   1 user     group           0 Sep 28  2002 dll
+-rw-rw-rw-   1 user     group         777 Jan 18 02:40 e.lpt
+-rw-rw-rw-   1 user     group        1015 Nov 15 00:39 ex4sos''.mps
+-rw-rw-rw-   1 user     group         829 Nov 14 22:48 ex4sos'.mps
+-rw-rw-rw-   1 user     group         878 Nov 17 23:25 ex4sos.mps
+-rw-rw-rw-   1 user     group         832 Jan 18 02:42 f.lpt
+-rw-rw-rw-   1 user     group         184 Jan 18 02:43 g.lpt
+-rwxrwxrwx   1 user     group          78 Jan 14 00:39 glpk.bat
+-rw-rw-rw-   1 user     group        2451 Feb  3  2003 grp40.lp
+-rw-rw-rw-   1 user     group        8384 Feb  3  2003 grp40.mps
+-rw-rw-rw-   1 user     group        8194 Feb  2  2003 grp40new.mps
+-rw-rw-rw-   1 user     group         135 Nov 13 23:31 int1.lp
+-rw-rw-rw-   1 user     group         658 Nov 13 23:26 int1.mps
+-rw-rw-rw-   1 user     group       42492 Nov 16  2002 lex.c
+-rw-rw-rw-   1 user     group       19769 Sep  8  2002 lex.inc
+-rw-rw-rw-   1 user     group       42489 Nov 16  2002 lex0.c
+drwxrwxrwx   1 user     group           0 Sep 28  2002 liblpk
+-rw-rw-rw-   1 user     group       30924 Nov 16  2002 lp.c
+-rw-rw-rw-   1 user     group       19661 Sep 19  2002 lp.inc
+-rw-rw-rw-   1 user     group       30924 Nov 16  2002 lp0.c
+-rw-rw-rw-   1 user     group          79 Dec 21 15:54 lp1.lp
+-rw-rw-rw-   1 user     group        7466 Feb  3  2003 lp1.mps
+-rw-rw-rw-   1 user     group          79 Mar  8  2003 lp2.lp
+-rw-rw-rw-   1 user     group        7466 Feb  3  2003 lp2.mps
+drwxrwxrwx   1 user     group           0 Sep 28  2002 lp2mps
+-rw-rw-rw-   1 user     group        2385 Feb  3  2003 lp3.lp
+-rw-rw-rw-   1 user     group        7466 Feb  3  2003 lp3.mps
+-rw-rw-rw-   1 user     group        2385 Feb  3  2003 lp4.lp
+-rw-rw-rw-   1 user     group        7466 Feb  3  2003 lp4.mps
+-rw-rw-rw-   1 user     group        2155 May  4  2003 lp5'.lp
+-rw-rw-rw-   1 user     group        2385 Feb  3  2003 lp5.lp
+-rw-rw-rw-   1 user     group        7466 Feb  3  2003 lp5.mps
+-rw-rw-rw-   1 user     group         279 Jul 21  2003 lp6.lp
+-rw-rw-rw-   1 user     group          77 Jul 29  2003 lp7'.lp
+-rw-rw-rw-   1 user     group          66 Jul 29  2003 lp7.lp
+-rw-rw-rw-   1 user     group         509 Nov 10 12:19 lp7.mps
+-rw-rw-rw-   1 user     group       40253 Jan 18 21:20 lp_CPLEX.c
+-rw-rw-rw-   1 user     group       51719 Jan 18 21:20 lp_CPLEX.h
+-rw-rw-rw-   1 user     group        3299 Jan 25 00:26 lp_CPLEX.l
+-rw-rw-rw-   1 user     group        9888 Jan 23 00:25 lp_CPLEX.y
+-rw-rw-rw-   1 user     group       10005 Jan 18 18:15 lp_CPLEX.yy
+drwxrwxrwx   1 user     group           0 Sep 28  2002 lp_solve
+-rw-rw-rw-   1 user     group       15360 Dec 22  2002 lp_solve.suo
+-rw-rw-rw-   1 user     group         200 Sep 21  2002 lp_solve4.rtf
+-rw-rw-rw-   1 user     group       10770 Dec  4 16:18 lpsolve.lp
+-rw-rw-rw-   1 user     group       30829 Dec  4 23:54 lpsolve.mps
+-rw-rw-rw-   1 user     group           7 Feb  6  2003 model.lp
+-rw-rw-rw-   1 user     group          60 Feb  6  2003 model.mps
+drwxrwxrwx   1 user     group           0 Sep 28  2002 mps2lp
+-rw-rw-rw-   1 user     group        5000 Aug 29  2002 oldsensitivity
+drwxrwxrwx   1 user     group           0 Nov 16  2002 oops
+-rw-rw-rw-   1 user     group          91 Jan 25  2003 oops.bak
+-rw-rw-rw-   1 user     group          91 Jan 25  2003 oops.lp
+-rw-rw-rw-   1 user     group         137 Jan 25  2003 oops.mps
+-rw-rw-rw-   1 user     group          18 Feb  5  2003 out
+-rw-rw-rw-   1 user     group          26 Sep 17  2002 patchlev.h
+-rw-rw-rw-   1 user     group       93131 Jan 26 00:22 pe.cfg
+-rw-rw-rw-   1 user     group          33 Sep 10 21:02 peno.lp
+-rw-rw-rw-   1 user     group         234 Jan 12  2003 peno.mps
+-rw-rw-rw-   1 user     group       51690 Aug 31  2002 peno.txt
+-rw-rw-rw-   1 user     group         619 Nov 15 00:54 peno9.mps
+-rw-rw-rw-   1 user     group       86267 Jul 21  2003 pilot4'''.lp
+-rw-rw-rw-   1 user     group       86267 Jul 21  2003 pilot4''.lp
+-rw-rw-rw-   1 user     group      187505 Jul 21  2003 pilot4''.mps
+-rw-rw-rw-   1 user     group       95203 Mar  8  2003 pilot4'.lp
+-rw-rw-rw-   1 user     group           0 Mar  8  2003 pilot4'.out
+-rw-rw-rw-   1 user     group       95154 Sep  7  2002 pilot4.lp
+-rw-rw-rw-   1 user     group       20237 Sep 20  2002 problem1'.mps
+-rw-rw-rw-   1 user     group       20335 Sep 19  2002 problem1.mps
+-rw-rw-rw-   1 user     group       25324 Sep 19  2002 problem2.mps
+-rw-rw-rw-   1 user     group      165603 Sep 29  2002 problem3.mps
+-rw-rw-rw-   1 user     group       26831 Sep 29  2002 problem4.mps
+-rw-rw-rw-   1 user     group       26733 Sep 29  2002 problem5.mps
+-rw-rw-rw-   1 user     group       24757 Oct  1  2002 problem6.mps
+-rw-rw-rw-   1 user     group         134 Nov 12 23:51 sc0'.lp
+-rw-rw-rw-   1 user     group         125 Nov 12 23:42 sc0.lp
+-rw-rw-rw-   1 user     group         622 Nov 11 19:09 sc0.mps
+-rw-rw-rw-   1 user     group         137 Nov 12 23:54 sc1'.lp
+-rw-rw-rw-   1 user     group         125 Nov 12 23:51 sc1.lp
+-rw-rw-rw-   1 user     group         622 Nov 11 18:59 sc1.mps
+-rw-rw-rw-   1 user     group          54 Oct 25 17:04 test.lp
+-rw-rw-rw-   1 user     group         253 Mar  3  2001 test.mps
+-rw-rw-rw-   1 user     group          38 Feb  8  2003 test2.lp
+-rw-rw-rw-   1 user     group         252 Jul 29  2003 test2.mps
+-rw-rw-rw-   1 user     group          39 Feb 13  2003 test3.lp
+-rw-rw-rw-   1 user     group         244 Jul 29  2003 test3.mps
+-rw-rw-rw-   1 user     group          37 Feb 13  2003 test4.lp
+-rw-rw-rw-   1 user     group           2 Jan 17 15:18 unistd.h
+drwxrwxrwx   1 user     group           0 Sep 28  2002 vb
+drwxrwxrwx   1 user     group           0 Mar 22  2003 vb.net
+-rw-rw-rw-   1 user     group        2696 Apr 14  2003 x.lp
+-rw-rw-rw-   1 user     group        8568 Apr 14  2003 x.mps
+-rw-rw-rw-   1 user     group       30160 Jan 23 00:19 y.output
+-rw-rw-rw-   1 user     group       39010 Jan 23 00:19 y.tab.c
+
+extra\Excel=:
+total 422
+-rw-rw-rw-   1 user     group      180224 Jan  4 19:00 demo.xls
+-rwxrwxrwx   1 user     group         120 Jul 10  2003 distrib.bat
+-rw-rw-rw-   1 user     group          10 Jul 10  2003 distribsrc.txt
+-rw-rw-rw-   1 user     group         221 Jul 10  2003 log.txt
+-rw-rw-rw-   1 user     group         122 Jul 10  2003 lp1.lp
+-rw-rw-rw-   1 user     group         530 Jul 10  2003 lp1.mps
+-rw-rw-rw-   1 user     group         232 Jul 10  2003 lp2.lp
+-rw-rw-rw-   1 user     group        1101 Jul 10  2003 lp2.mps
+-rw-rw-rw-   1 user     group       63904 Jul 17  2003 lp_solve_4.0_excel.zip
+-rw-rw-rw-   1 user     group      159744 Jul  9  2003 lpsolve.dll
+-rw-rw-rw-   1 user     group        1560 Jul 10  2003 pe.cfg
+-rw-rw-rw-   1 user     group       16608 Jul 10  2003 result.txt
+
+extra\ampl=:
+total 25
+-rw-rw-rw-   1 user     group        2428 Jun  7  2003 Makefile
+-rw-rw-rw-   1 user     group        1571 Jun  7  2003 README.txt
+-rw-rw-rw-   1 user     group        1542 Jun  7  2003 changes.txt
+-rw-rw-rw-   1 user     group        9790 Jun  7  2003 lpsolve.c
+-rw-rw-rw-   1 user     group        2428 Jun  7  2003 makefile.u.txt
+-rw-rw-rw-   1 user     group        2428 Jun  7  2003 makefile.vc.txt
+-rw-rw-rw-   1 user     group        1337 Jan  1 23:07 pe.cfg
+
+extra\api=:
+total 1497
+-rw-rw-rw-   1 user     group      295583 Nov 15 20:19 APIreference.zip
+-rw-rw-rw-   1 user     group        1885 Jan 25 23:39 BuildLog.htm
+-rw-rw-rw-   1 user     group        8274 Jan 25 23:07 FAQ.htm
+-rw-rw-rw-   1 user     group        1011 Jun 10  2003 HTMLHelp.vcproj
+-rw-rw-rw-   1 user     group       27541 Nov 14 20:27 LGPL.htm
+-rw-rw-rw-   1 user     group      147654 Jan 25 23:07 Linear Programming FAQ.htm
+drwxrwxrwx   1 user     group           0 Nov 14 20:50 Linear Programming FAQ_files
+-rw-rw-rw-   1 user     group       27233 Jan 25 22:57 SOS.htm
+drwxrwxrwx   1 user     group           0 Nov 14 21:00 Semi-Continuous Variables_files
+drwxrwxrwx   1 user     group           0 Nov 14 21:02 Special Ordered Sets of Type One_files
+drwxrwxrwx   1 user     group           0 Nov 14 21:04 Special Ordered Sets of Type Two_files
+-rw-rw-rw-   1 user     group        3097 Nov 15 00:42 add_SOS.htm
+-rw-rw-rw-   1 user     group        3255 Feb  8  2003 add_column.htm
+-rw-rw-rw-   1 user     group        4079 Feb  8  2003 add_constraint.htm
+-rw-rw-rw-   1 user     group        4165 Feb 20  2003 add_lag_con.htm
+-rw-rw-rw-   1 user     group       27648 Jan 25 23:40 api.ncb
+-rw-rw-rw-   1 user     group        6740 Nov 15 19:17 api.sln
+-rw-rw-rw-   1 user     group        4607 Feb 22  2003 api.sln.02
+-rw-rw-rw-   1 user     group        4607 Feb 22  2003 api.sln.old
+-rw-rw-rw-   1 user     group        9728 Jan 25 23:40 api.suo
+-rw-rw-rw-   1 user     group        2551 Feb  8  2003 auto_scale.htm
+-rw-rw-rw-   1 user     group        2532 Feb  8  2003 column_in_lp.htm
+-rw-rw-rw-   1 user     group        2531 Feb  8  2003 copy_lp.htm
+-rw-rw-rw-   1 user     group        2512 Jan  1 23:12 del_column.htm
+-rw-rw-rw-   1 user     group        2538 Jan  1 23:12 del_constraint.htm
+-rw-rw-rw-   1 user     group        1755 Feb  8  2003 delete_lp.htm
+-rw-rw-rw-   1 user     group        2631 Jul 17  2003 distrib.txt
+-rw-rw-rw-   1 user     group        2533 Jun  9  2003 get_Lrows.htm
+-rw-rw-rw-   1 user     group        2682 Jun  9  2003 get_Ncolumns.htm
+-rw-rw-rw-   1 user     group        2749 Jun  9  2003 get_Norig_columns.htm
+-rw-rw-rw-   1 user     group        2654 Jun  9  2003 get_Norig_rows.htm
+-rw-rw-rw-   1 user     group        2596 Jun  9  2003 get_Nrows.htm
+-rw-rw-rw-   1 user     group        3384 Jun 17  2003 get_basis.htm
+-rw-rw-rw-   1 user     group        3161 Feb  8  2003 get_bb_rule.htm
+-rw-rw-rw-   1 user     group        2862 Jun  6  2003 get_bounds_tighter.htm
+-rw-rw-rw-   1 user     group        2841 Feb 20  2003 get_break_at_value.htm
+-rw-rw-rw-   1 user     group        2515 Feb  8  2003 get_col_name.htm
+-rw-rw-rw-   1 user     group        3158 Feb  8  2003 get_column.htm
+-rw-rw-rw-   1 user     group        2943 Feb  8  2003 get_constr_type.htm
+-rw-rw-rw-   1 user     group        3738 Nov 15 19:02 get_constraints.htm
+-rw-rw-rw-   1 user     group        2862 Feb  8  2003 get_epsb.htm
+-rw-rw-rw-   1 user     group        2844 Feb  8  2003 get_epsd.htm
+-rw-rw-rw-   1 user     group        2873 Feb  8  2003 get_epsel.htm
+-rw-rw-rw-   1 user     group        2730 Feb  8  2003 get_epsilon.htm
+-rw-rw-rw-   1 user     group        2590 Feb  8  2003 get_epsperturb.htm
+-rw-rw-rw-   1 user     group        3278 Feb  8  2003 get_epspivot.htm
+-rw-rw-rw-   1 user     group        3075 Jun  6  2003 get_floor_first.htm
+-rw-rw-rw-   1 user     group        2700 Feb  8  2003 get_improve.htm
+-rw-rw-rw-   1 user     group        2696 Feb  8  2003 get_infinite.htm
+-rw-rw-rw-   1 user     group        3847 Nov 15 19:02 get_lambda.htm
+-rw-rw-rw-   1 user     group        2812 Feb  8  2003 get_lowbo.htm
+-rw-rw-rw-   1 user     group        3369 Jun  9  2003 get_lp_index.htm
+-rw-rw-rw-   1 user     group        2088 Feb  8  2003 get_lp_name.htm
+-rw-rw-rw-   1 user     group        3114 Feb  8  2003 get_mat.htm
+-rw-rw-rw-   1 user     group        2235 Feb  8  2003 get_max_level.htm
+-rw-rw-rw-   1 user     group        2485 Feb  8  2003 get_max_num_inv.htm
+-rw-rw-rw-   1 user     group        3104 Feb  8  2003 get_mip_gap.htm
+-rw-rw-rw-   1 user     group        2742 Feb  8  2003 get_negrange.htm
+-rw-rw-rw-   1 user     group        2771 Feb 20  2003 get_obj_bound.htm
+-rw-rw-rw-   1 user     group        2782 Nov 15 19:02 get_objective.htm
+-rw-rw-rw-   1 user     group        3311 Jun  9  2003 get_orig_index.htm
+-rw-rw-rw-   1 user     group        2777 Feb  8  2003 get_piv_rule.htm
+-rw-rw-rw-   1 user     group        4262 Nov 15 19:02 get_primal_solution.htm
+-rw-rw-rw-   1 user     group        3024 Feb  8  2003 get_rh.htm
+-rw-rw-rw-   1 user     group        3069 Feb  8  2003 get_rh_range.htm
+-rw-rw-rw-   1 user     group        3102 Feb  8  2003 get_row.htm
+-rw-rw-rw-   1 user     group        2528 Feb  8  2003 get_row_name.htm
+-rw-rw-rw-   1 user     group        4060 Feb  8  2003 get_scalemode.htm
+-rw-rw-rw-   1 user     group        5859 Nov 15 19:15 get_sensitivity_obj.htm
+-rw-rw-rw-   1 user     group        6520 Nov 15 19:02 get_sensitivity_rhs.htm
+-rw-rw-rw-   1 user     group        3627 Feb  8  2003 get_splitnegvars.htm
+-rw-rw-rw-   1 user     group        2381 Feb  8  2003 get_timeout.htm
+-rw-rw-rw-   1 user     group        2305 Feb  8  2003 get_total_iter.htm
+-rw-rw-rw-   1 user     group        2291 Feb  8  2003 get_total_nodes.htm
+-rw-rw-rw-   1 user     group        2757 Feb  8  2003 get_upbo.htm
+-rw-rw-rw-   1 user     group        3898 Jun  6  2003 get_var_branch.htm
+-rw-rw-rw-   1 user     group        3711 Nov 15 19:02 get_variables.htm
+-rw-rw-rw-   1 user     group        3030 Jun  6  2003 get_varpriority.htm
+-rw-rw-rw-   1 user     group        2890 Dec 27 20:32 get_verbose.htm
+-rw-rw-rw-   1 user     group        4570 Nov 15 19:02 get_work_solution.htm
+-rw-rw-rw-   1 user     group        5977 Jan 25 23:07 integer.htm
+-rw-rw-rw-   1 user     group        2411 Feb  8  2003 is_SOS_var.htm
+-rw-rw-rw-   1 user     group        2278 Feb  8  2003 is_anti_degen.htm
+-rw-rw-rw-   1 user     group        2770 Feb 20  2003 is_break_at_first.htm
+-rw-rw-rw-   1 user     group        2250 Feb  8  2003 is_debug.htm
+-rw-rw-rw-   1 user     group        2531 Feb  8  2003 is_do_presolve.htm
+-rw-rw-rw-   1 user     group        3325 Nov 15 19:02 is_feasible.htm
+-rw-rw-rw-   1 user     group        2594 Feb  8  2003 is_int.htm
+-rw-rw-rw-   1 user     group        2204 Feb  8  2003 is_lag_trace.htm
+-rw-rw-rw-   1 user     group        2276 Feb  8  2003 is_print_at_invert.htm
+-rw-rw-rw-   1 user     group        2306 Feb  8  2003 is_print_sol.htm
+-rw-rw-rw-   1 user     group        2410 Nov 12 23:12 is_semicont.htm
+-rw-rw-rw-   1 user     group        2150 Feb  8  2003 is_trace.htm
+-rw-rw-rw-   1 user     group        4366 Nov 15 19:02 lag_solve.htm
+-rw-rw-rw-   1 user     group        7169 Jan 25 23:39 lp-format.htm
+-rw-rw-rw-   1 user     group        8024 Nov 15 18:59 lp_solve API reference.htm
+-rw-rw-rw-   1 user     group      283370 Jan 25 23:39 lp_solve.chm
+-rw-rw-rw-   1 user     group       26219 Nov 15 19:17 lp_solve.hhc
+-rw-rw-rw-   1 user     group       26181 Nov 15 19:17 lp_solve.hhk
+-rw-rw-rw-   1 user     group         331 Jan  1 23:17 lp_solve.hhp
+-rw-rw-rw-   1 user     group        4576 Jan 25 23:07 lp_solve.htm
+-rw-rw-rw-   1 user     group        1792 Feb  9  2003 lp_solve_version.htm
+-rw-rw-rw-   1 user     group        2926 Feb 11  2003 make_lp.htm
+-rw-rw-rw-   1 user     group       14284 Jan 25 23:07 mps-format.htm
+-rw-rw-rw-   1 user     group       63950 Jan 26 00:23 pe.cfg
+-rw-rw-rw-   1 user     group        2567 Feb  8  2003 print_constraints.htm
+-rw-rw-rw-   1 user     group        2531 Feb  8  2003 print_duals.htm
+-rw-rw-rw-   1 user     group        2062 Feb  8  2003 print_file.htm
+-rw-rw-rw-   1 user     group        2406 Feb  8  2003 print_lp.htm
+-rw-rw-rw-   1 user     group        2532 Feb  8  2003 print_objective.htm
+-rw-rw-rw-   1 user     group        2650 Feb  8  2003 print_scales.htm
+-rw-rw-rw-   1 user     group        2545 Feb  8  2003 print_solution.htm
+-rw-rw-rw-   1 user     group        2978 Feb  8  2003 put_abortfunc.htm
+-rw-rw-rw-   1 user     group        2986 Feb  8  2003 put_logfunc.htm
+-rw-rw-rw-   1 user     group        3868 Feb  8  2003 read_lp.htm
+-rw-rw-rw-   1 user     group        3241 Feb  8  2003 read_mps.htm
+-rw-rw-rw-   1 user     group        2445 Feb  8  2003 reset_basis.htm
+-rw-rw-rw-   1 user     group        8220 Jan  1 23:17 semi-cont.htm
+-rw-rw-rw-   1 user     group        7472 Nov 30 12:20 sensitivity.htm
+-rw-rw-rw-   1 user     group        2341 Feb  8  2003 set_anti_degen.htm
+-rw-rw-rw-   1 user     group        3439 Jun 17  2003 set_basis.htm
+-rw-rw-rw-   1 user     group        3251 Feb  8  2003 set_bb_rule.htm
+-rw-rw-rw-   1 user     group        2960 Feb  8  2003 set_bounds.htm
+-rw-rw-rw-   1 user     group        3003 Jun  6  2003 set_bounds_tighter.htm
+-rw-rw-rw-   1 user     group        2857 Feb 20  2003 set_break_at_first.htm
+-rw-rw-rw-   1 user     group        2931 Feb 20  2003 set_break_at_value.htm
+-rw-rw-rw-   1 user     group        2569 Feb  8  2003 set_col_name.htm
+-rw-rw-rw-   1 user     group        3030 Feb  8  2003 set_constr_type.htm
+-rw-rw-rw-   1 user     group        2306 Feb  8  2003 set_debug.htm
+-rw-rw-rw-   1 user     group        2593 Feb  8  2003 set_do_presolve.htm
+-rw-rw-rw-   1 user     group        3499 Feb  8  2003 set_epsb.htm
+-rw-rw-rw-   1 user     group        3450 Feb  8  2003 set_epsd.htm
+-rw-rw-rw-   1 user     group        3434 Feb  8  2003 set_epsel.htm
+-rw-rw-rw-   1 user     group        3953 Feb  8  2003 set_epsilon.htm
+-rw-rw-rw-   1 user     group        2681 Feb  8  2003 set_epsperturb.htm
+-rw-rw-rw-   1 user     group        3606 Feb  8  2003 set_epspivot.htm
+-rw-rw-rw-   1 user     group        3166 Jun  6  2003 set_floor_first.htm
+-rw-rw-rw-   1 user     group        2731 Feb  8  2003 set_improve.htm
+-rw-rw-rw-   1 user     group        2911 Feb  8  2003 set_infinite.htm
+-rw-rw-rw-   1 user     group        2818 Feb  8  2003 set_int.htm
+-rw-rw-rw-   1 user     group        2266 Feb  8  2003 set_lag_trace.htm
+-rw-rw-rw-   1 user     group        2808 Feb  8  2003 set_lowbo.htm
+-rw-rw-rw-   1 user     group        3131 Feb  8  2003 set_lowrange.htm
+-rw-rw-rw-   1 user     group        2248 Feb  8  2003 set_lp_name.htm
+-rw-rw-rw-   1 user     group        3352 Feb  8  2003 set_mat.htm
+-rw-rw-rw-   1 user     group        2528 Feb  8  2003 set_max_num_inv.htm
+-rw-rw-rw-   1 user     group        2071 Feb  8  2003 set_maxim.htm
+-rw-rw-rw-   1 user     group        2072 Feb  8  2003 set_minim.htm
+-rw-rw-rw-   1 user     group        3190 Feb  8  2003 set_mip_gap.htm
+-rw-rw-rw-   1 user     group        2869 Feb  8  2003 set_negrange.htm
+-rw-rw-rw-   1 user     group        2856 Feb 20  2003 set_obj_bound.htm
+-rw-rw-rw-   1 user     group        3231 Feb  8  2003 set_obj_fn.htm
+-rw-rw-rw-   1 user     group        2882 Feb  8  2003 set_piv_rule.htm
+-rw-rw-rw-   1 user     group        2344 Feb  8  2003 set_print_at_invert.htm
+-rw-rw-rw-   1 user     group        2362 Feb  8  2003 set_print_sol.htm
+-rw-rw-rw-   1 user     group        3205 Feb  8  2003 set_rh.htm
+-rw-rw-rw-   1 user     group        3044 Feb  8  2003 set_rh_range.htm
+-rw-rw-rw-   1 user     group        3357 Feb  8  2003 set_rh_vec.htm
+-rw-rw-rw-   1 user     group        2596 Feb  8  2003 set_row_name.htm
+-rw-rw-rw-   1 user     group        4125 Feb  8  2003 set_scalemode.htm
+-rw-rw-rw-   1 user     group        2792 Feb  8  2003 set_semicont.htm
+-rw-rw-rw-   1 user     group        3704 Feb  8  2003 set_splitnegvars.htm
+-rw-rw-rw-   1 user     group        2514 Feb  8  2003 set_timeout.htm
+-rw-rw-rw-   1 user     group        2210 Feb  8  2003 set_trace.htm
+-rw-rw-rw-   1 user     group        2731 Feb  8  2003 set_upbo.htm
+-rw-rw-rw-   1 user     group        3128 Feb  8  2003 set_uprange.htm
+-rw-rw-rw-   1 user     group        3877 Jun  6  2003 set_var_branch.htm
+-rw-rw-rw-   1 user     group        3130 Jun  6  2003 set_varweights.htm
+-rw-rw-rw-   1 user     group        2968 Dec 27 20:32 set_verbose.htm
+-rw-rw-rw-   1 user     group        4156 Nov 15 19:03 solve.htm
+-rw-rw-rw-   1 user     group        2172 Feb  8  2003 unscale.htm
+-rw-rw-rw-   1 user     group        2800 Feb  8  2003 write_lp.htm
+-rw-rw-rw-   1 user     group        2815 Feb  8  2003 write_mps.htm
+
+extra\api\Linear Programming FAQ_files=:
+total 3
+-rw-rw-rw-   1 user     group        1124 Nov 14 20:49 colorbar.gif
+-rw-rw-rw-   1 user     group         522 Nov 14 20:49 cutcube.gif
+
+extra\api\Semi-Continuous Variables_files=:
+total 74
+-rw-rw-rw-   1 user     group       71891 Nov 14 20:57 bsscdhtm.js
+-rw-rw-rw-   1 user     group        2242 Nov 14 20:57 img00340.gif
+
+extra\api\Special Ordered Sets of Type One_files=:
+total 85
+-rw-rw-rw-   1 user     group       71891 Nov 14 20:57 bsscdhtm.js
+-rw-rw-rw-   1 user     group        4454 Nov 14 20:58 img00341.gif
+-rw-rw-rw-   1 user     group        1019 Nov 14 20:58 img00342.gif
+-rw-rw-rw-   1 user     group        1352 Nov 14 20:58 img00343.gif
+-rw-rw-rw-   1 user     group        1250 Nov 14 20:58 img00344.gif
+-rw-rw-rw-   1 user     group        1236 Nov 14 20:58 img00345.gif
+-rw-rw-rw-   1 user     group         862 Nov 14 20:58 img00346.gif
+-rw-rw-rw-   1 user     group         870 Nov 14 20:58 img00347.gif
+
+extra\api\Special Ordered Sets of Type Two_files=:
+total 98
+-rw-rw-rw-   1 user     group       71891 Nov 14 20:57 bsscdhtm.js
+-rw-rw-rw-   1 user     group         922 Nov 14 21:04 img00348.gif
+-rw-rw-rw-   1 user     group        1104 Nov 14 21:04 img00349.gif
+-rw-rw-rw-   1 user     group        1102 Nov 14 21:04 img00350.gif
+-rw-rw-rw-   1 user     group        4626 Nov 14 21:04 img00351.gif
+-rw-rw-rw-   1 user     group         852 Nov 14 21:04 img00352.gif
+-rw-rw-rw-   1 user     group         982 Nov 14 21:04 img00353.gif
+-rw-rw-rw-   1 user     group        1073 Nov 14 21:04 img00354.gif
+-rw-rw-rw-   1 user     group        1150 Nov 14 21:04 img00355.gif
+-rw-rw-rw-   1 user     group         922 Nov 14 21:04 img00356.gif
+-rw-rw-rw-   1 user     group        1231 Nov 14 21:04 img00357.gif
+-rw-rw-rw-   1 user     group         922 Nov 14 21:04 img00358.gif
+-rw-rw-rw-   1 user     group         990 Nov 14 21:04 img00359.gif
+-rw-rw-rw-   1 user     group        1346 Nov 14 21:04 img00360.gif
+-rw-rw-rw-   1 user     group        1257 Nov 14 21:04 img00361.gif
+-rw-rw-rw-   1 user     group        1236 Nov 14 21:04 img00362.gif
+
+extra\c=:
+total 332
+drwxrwxrwx   1 user     group           0 Apr 19  2003 Debug
+-rw-rw-rw-   1 user     group         196 Apr 23  1997 SETCC
+-rwxrwxrwx   1 user     group         488 Apr 20  1997 SETHC.BAT
+-rw-rw-rw-   1 user     group        8042 Jan  4 19:06 demo.c
+-rw-rw-rw-   1 user     group        3599 Sep  4 20:21 demo.dsp
+-rw-rw-rw-   1 user     group         531 Nov 16  2002 demo.dsw
+-rw-rw-rw-   1 user     group       19456 Jan  4 19:09 demo.ncb
+-rw-rw-rw-   1 user     group       48640 Sep  4 20:21 demo.opt
+-rw-rw-rw-   1 user     group        1196 Sep  4 20:20 demo.plg
+-rw-rw-rw-   1 user     group         897 Jul 10  2003 demo.sln
+-rw-rw-rw-   1 user     group         908 Apr 21  2003 demo.sln.old
+-rw-rw-rw-   1 user     group        9216 Jan  4 19:09 demo.suo
+-rw-rw-rw-   1 user     group        3886 Jan  4 19:08 demo.vcproj
+-rw-rw-rw-   1 user     group        3539 Apr 21  2003 demo.vcproj.old
+-rwxrwxrwx   1 user     group         108 Apr 21  2003 distrib.bat
+-rw-rw-rw-   1 user     group          51 Apr 21  2003 distribsrc.txt
+-rw-rw-rw-   1 user     group        5430 Jul 17  2003 lp_solve_4.0_c.zip
+-rw-rw-rw-   1 user     group      159744 Jul 10  2003 lpsolve.dll
+-rw-rw-rw-   1 user     group       64112 Apr 21  2003 lpsolve.lib
+-rw-rw-rw-   1 user     group        1168 Jan  4 19:24 pe.cfg
+
+extra\c\Debug=:
+total 6828
+-rw-rw-rw-   1 user     group        2459 Jan  4 19:08 BuildLog.htm
+-rwxrwxrwx   1 user     group      126976 Jan  4 19:08 demo.exe
+-rw-rw-rw-   1 user     group      497452 Jan  4 19:08 demo.ilk
+-rw-rw-rw-   1 user     group      200048 Jan  4 19:08 demo.obj
+-rw-rw-rw-   1 user     group     4325376 Jan  4 19:08 demo.pch
+-rw-rw-rw-   1 user     group     1068032 Jan  4 19:08 demo.pdb
+-rw-rw-rw-   1 user     group       41984 Sep  4 20:20 vc60.idb
+-rw-rw-rw-   1 user     group      109568 Jan  4 19:08 vc70.idb
+-rw-rw-rw-   1 user     group      618496 Jan  4 19:08 vc70.pdb
+
+extra\cs.net=:
+total 252
+-rw-rw-rw-   1 user     group        2432 Mar 19  2003 AssemblyInfo.cs
+drwxrwxrwx   1 user     group           0 Mar 22  2003 bin
+-rw-rw-rw-   1 user     group        7168 Mar 22  2003 cs.suo
+-rw-rw-rw-   1 user     group       11717 Jan  4 19:14 demo.cs
+-rw-rw-rw-   1 user     group        4558 Jan  4 19:12 demo.csproj
+-rw-rw-rw-   1 user     group        1806 Jan  4 19:16 demo.csproj.user
+-rw-rw-rw-   1 user     group         893 Jan  4 19:12 demo.sln
+-rw-rw-rw-   1 user     group         904 Mar 22  2003 demo.sln.old
+-rw-rw-rw-   1 user     group        8192 Jan  4 19:16 demo.suo
+-rwxrwxrwx   1 user     group         123 Mar 23  2003 distrib.bat
+-rw-rw-rw-   1 user     group          80 Mar 23  2003 distribsrc.txt
+-rw-rw-rw-   1 user     group         221 Jan  4 19:15 log.txt
+-rw-rw-rw-   1 user     group         122 Jan  4 19:15 lp1.lp
+-rw-rw-rw-   1 user     group         530 Jan  4 19:15 lp1.mps
+-rw-rw-rw-   1 user     group         232 Jul 10  2003 lp2.lp
+-rw-rw-rw-   1 user     group        1101 Jul 10  2003 lp2.mps
+-rw-rw-rw-   1 user     group       10220 Jul 17  2003 lp_solve_4.0_cs.net.zip
+-rw-rw-rw-   1 user     group      159744 Jul 10  2003 lpsolve.dll
+-rw-rw-rw-   1 user     group       24517 Jan  4 19:13 lpsolve4.cs
+drwxrwxrwx   1 user     group           0 Mar 22  2003 obj
+-rw-rw-rw-   1 user     group        1188 Jan  4 19:15 pe.cfg
+-rw-rw-rw-   1 user     group       12885 Jan  4 19:15 result.txt
+
+extra\cs.net\bin=:
+total 0
+drwxrwxrwx   1 user     group           0 Mar 22  2003 Debug
+
+extra\cs.net\bin\Debug=:
+total 60
+-rwxrwxrwx   1 user     group       36864 Jan  4 19:15 demo.exe
+-rw-rw-rw-   1 user     group       24064 Jan  4 19:15 demo.pdb
+
+extra\cs.net\obj=:
+total 0
+drwxrwxrwx   1 user     group           0 Mar 22  2003 Debug
+
+extra\cs.net\obj\Debug=:
+total 160
+drwxrwxrwx   1 user     group           0 Mar 22  2003 TempPE
+-rw-rw-rw-   1 user     group       62600 Mar 22  2003 cs.projdata
+-rwxrwxrwx   1 user     group       36864 Jan  4 19:15 demo.exe
+-rw-rw-rw-   1 user     group        1892 Jan  4 19:15 demo.exe.incr
+-rw-rw-rw-   1 user     group       24064 Jan  4 19:15 demo.pdb
+-rw-rw-rw-   1 user     group       36616 Jan  4 19:16 demo.projdata
+drwxrwxrwx   1 user     group           0 Mar 22  2003 temp
+
+extra\cs.net\obj\Debug\TempPE=:
+total 0
+
+extra\cs.net\obj\Debug\temp=:
+total 0
+
+extra\demo=:
+total 277
+drwxrwxrwx   1 user     group           0 Nov 16  2002 Debug
+drwxrwxrwx   1 user     group           0 Jan 11  2003 Release
+-rw-rw-rw-   1 user     group         196 Apr 23  1997 SETCC
+-rwxrwxrwx   1 user     group         488 Apr 20  1997 SETHC.BAT
+drwxrwxrwx   1 user     group           0 Jul 23  2003 a
+-rw-rw-rw-   1 user     group        3561 Aug 31  2002 demo.001
+-rw-rw-rw-   1 user     group        4162 Jan  4 19:24 demo.dsp
+-rw-rw-rw-   1 user     group         531 Nov 16  2002 demo.dsw
+-rw-rw-rw-   1 user     group      191488 Jan  4 19:22 demo.ncb
+-rw-rw-rw-   1 user     group       49664 Apr 20  2003 demo.opt
+-rw-rw-rw-   1 user     group         242 Apr 20  2003 demo.plg
+-rw-rw-rw-   1 user     group         897 May 29  2003 demo.sln
+-rw-rw-rw-   1 user     group         908 Dec 22  2002 demo.sln.old
+-rw-rw-rw-   1 user     group       10240 Jan  4 19:22 demo.suo
+-rw-rw-rw-   1 user     group        4389 Jan  4 19:19 demo.vcproj
+-rw-rw-rw-   1 user     group        4154 Dec 22  2002 demo.vcproj.old
+-rw-rw-rw-   1 user     group          79 Jan 11  2003 lp1.lp
+-rw-rw-rw-   1 user     group         530 Nov 16  2002 lp1.mps
+-rw-rw-rw-   1 user     group          79 Jan 11  2003 lp2.lp
+-rw-rw-rw-   1 user     group         966 Nov 16  2002 lp2.mps
+-rw-rw-rw-   1 user     group        1227 Jan  4 19:28 pe.cfg
+
+extra\demo\Debug=:
+total 3446
+-rw-rw-rw-   1 user     group        3380 Jan  4 19:21 BuildLog.htm
+-rw-rw-rw-   1 user     group       31164 Jan  4 19:21 debug.obj
+-rwxrwxrwx   1 user     group      487424 Jan  4 19:21 demo.exe
+-rw-rw-rw-   1 user     group      750908 Jan  4 19:21 demo.ilk
+-rw-rw-rw-   1 user     group       32780 Jan  4 19:21 demo.obj
+-rw-rw-rw-   1 user     group      327680 Jan  4 19:21 demo.pch
+-rw-rw-rw-   1 user     group     1002496 Jan  4 19:21 demo.pdb
+-rw-rw-rw-   1 user     group       46766 Jan  4 19:21 fortify.obj
+-rw-rw-rw-   1 user     group       10476 Jan  4 19:21 hash.obj
+-rw-rw-rw-   1 user     group       55494 Jan  4 19:21 lp.obj
+-rw-rw-rw-   1 user     group      316792 Jan  4 19:21 lpkit.obj
+-rw-rw-rw-   1 user     group       18492 Jan  4 19:21 presolve.obj
+-rw-rw-rw-   1 user     group       51710 Jan  4 19:21 read.obj
+-rw-rw-rw-   1 user     group       41661 Jan  4 19:21 readmps.obj
+-rw-rw-rw-   1 user     group      138364 Jan  4 19:21 solve.obj
+-rw-rw-rw-   1 user     group       50176 Apr 20  2003 vc60.idb
+-rw-rw-rw-   1 user     group       76800 Jan  4 19:21 vc70.idb
+-rw-rw-rw-   1 user     group       77824 Jan  4 19:21 vc70.pdb
+
+extra\demo\Release=:
+total 753
+-rw-rw-rw-   1 user     group       23447 Jan 11  2003 DEMO.obj
+-rw-rw-rw-   1 user     group       15312 Jan 11  2003 debug.obj
+-rwxrwxrwx   1 user     group      147456 Jan 11  2003 demo.exe
+-rw-rw-rw-   1 user     group      288828 Jan 11  2003 demo.pch
+-rw-rw-rw-   1 user     group         228 Jan 11  2003 fortify.obj
+-rw-rw-rw-   1 user     group        3557 Jan 11  2003 hash.obj
+-rw-rw-rw-   1 user     group       22173 Jan 11  2003 lp.obj
+-rw-rw-rw-   1 user     group      117624 Jan 11  2003 lpkit.obj
+-rw-rw-rw-   1 user     group        8325 Jan 11  2003 presolve.obj
+-rw-rw-rw-   1 user     group       15634 Jan 11  2003 read.obj
+-rw-rw-rw-   1 user     group       21914 Jan 11  2003 readmps.obj
+-rw-rw-rw-   1 user     group       58863 Jan 11  2003 solve.obj
+-rw-rw-rw-   1 user     group       41984 Jan 11  2003 vc60.idb
+
+extra\demo\a=:
+total 15
+-rw-rw-rw-   1 user     group        5286 Jul 23  2003 demo.dsp
+-rw-rw-rw-   1 user     group         529 Jul 23  2003 demo.dsw
+-rw-rw-rw-   1 user     group         897 May 29  2003 demo.sln
+-rw-rw-rw-   1 user     group        4519 Jun  4  2003 demo.vcproj
+-rw-rw-rw-   1 user     group        1511 Jul 23  2003 pe.cfg
+
+extra\dll=:
+total 379
+drwxrwxrwx   1 user     group           0 Sep 28  2002 Debug
+drwxrwxrwx   1 user     group           0 Sep 28  2002 Debug fortify
+drwxrwxrwx   1 user     group           0 Sep 28  2002 Release
+-rw-rw-rw-   1 user     group        6433 Aug 31  2002 dll.001
+-rw-rw-rw-   1 user     group        6562 Jan  4 19:25 dll.dsp
+-rw-rw-rw-   1 user     group         533 Nov 16  2002 dll.dsw
+-rw-rw-rw-   1 user     group      248832 Jan 25 22:50 dll.ncb
+-rw-rw-rw-   1 user     group       52736 Jul  9  2003 dll.opt
+-rw-rw-rw-   1 user     group        2621 Jul  9  2003 dll.plg
+-rw-rw-rw-   1 user     group        1106 Jun  3  2003 dll.sln
+-rw-rw-rw-   1 user     group        1116 Dec 23  2002 dll.sln.old
+-rw-rw-rw-   1 user     group       14336 Jan 25 22:50 dll.suo
+-rw-rw-rw-   1 user     group        7011 Jan 25 22:07 dll.vcproj
+-rw-rw-rw-   1 user     group        6661 Dec 23  2002 dll.vcproj.old
+-rw-rw-rw-   1 user     group       32288 Nov 16  2002 lpsolve.aps
+-rw-rw-rw-   1 user     group        1216 Jan  4 19:25 pe.cfg
+
+extra\dll\Debug=:
+total 7114
+-rw-rw-rw-   1 user     group        7735 Dec 24  2002 BuildLog.htm
+-rw-rw-rw-   1 user     group       31417 Jan 23  2003 debug.obj
+-rw-rw-rw-   1 user     group     2969936 Jan 23  2003 dll.pch
+-rw-rw-rw-   1 user     group        1506 Jan 16  2003 fortify.obj
+-rw-rw-rw-   1 user     group       15889 Jan 16  2003 hash.obj
+-rw-rw-rw-   1 user     group       49229 Jan 23  2003 lp.obj
+-rw-rw-rw-   1 user     group      234603 Jan 23  2003 lpkit.obj
+-rw-rw-rw-   1 user     group      618565 Jan 23  2003 lpsolve.dll
+-rw-rw-rw-   1 user     group       36015 Jan 16  2003 lpsolve.exp
+-rw-rw-rw-   1 user     group      726364 Jan 23  2003 lpsolve.ilk
+-rw-rw-rw-   1 user     group       59316 Jan 16  2003 lpsolve.lib
+-rw-rw-rw-   1 user     group     1287168 Jan 23  2003 lpsolve.pdb
+-rw-rw-rw-   1 user     group        1032 Jan 23  2003 lpsolve.res
+-rw-rw-rw-   1 user     group       22089 Jan 16  2003 presolve.obj
+-rw-rw-rw-   1 user     group       37007 Jan 23  2003 read.obj
+-rw-rw-rw-   1 user     group       41643 Jan 16  2003 readmps.obj
+-rw-rw-rw-   1 user     group      116866 Jan 23  2003 solve.obj
+-rw-rw-rw-   1 user     group       58368 Jan 23  2003 vc60.idb
+-rw-rw-rw-   1 user     group       77824 Jan 23  2003 vc60.pdb
+-rw-rw-rw-   1 user     group      158720 Dec 24  2002 vc70.idb
+-rw-rw-rw-   1 user     group      618496 Dec 24  2002 vc70.pdb
+-rw-rw-rw-   1 user     group      104286 Jan 23  2003 windll.obj
+
+extra\dll\Debug fortify=:
+total 12241
+-rw-rw-rw-   1 user     group        3998 Jan 25 22:07 BuildLog.htm
+-rw-rw-rw-   1 user     group      184423 Jan 25 22:07 debug.obj
+-rw-rw-rw-   1 user     group     5767168 Jan 25 22:07 dll.pch
+-rw-rw-rw-   1 user     group       55302 Jan 25 22:07 fortify.obj
+-rw-rw-rw-   1 user     group      163660 Jan 25 22:07 hash.obj
+-rw-rw-rw-   1 user     group      218698 Jan 25 22:07 lp.obj
+-rw-rw-rw-   1 user     group      472268 Jan 25 22:07 lpkit.obj
+-rw-rw-rw-   1 user     group      598016 Jan 25 22:07 lpsolve.dll
+-rw-rw-rw-   1 user     group       59618 Jan 25 22:07 lpsolve.exp
+-rw-rw-rw-   1 user     group      919656 Jan 25 22:07 lpsolve.ilk
+-rw-rw-rw-   1 user     group      102692 Jan 25 22:07 lpsolve.lib
+-rw-rw-rw-   1 user     group      180986 Jul  9  2003 lpsolve.map
+-rw-rw-rw-   1 user     group     1780736 Jan 25 22:07 lpsolve.pdb
+-rw-rw-rw-   1 user     group         956 Jan 25 22:07 lpsolve.res
+-rw-rw-rw-   1 user     group         993 Apr 21  2003 pe.cfg
+-rw-rw-rw-   1 user     group      171669 Jan 25 22:07 presolve.obj
+-rw-rw-rw-   1 user     group      205162 Jan 25 22:07 read.obj
+-rw-rw-rw-   1 user     group      194829 Jan 25 22:07 readmps.obj
+-rw-rw-rw-   1 user     group      293181 Jan 25 22:07 solve.obj
+-rw-rw-rw-   1 user     group       58368 Jul  9  2003 vc60.idb
+-rw-rw-rw-   1 user     group      240640 Jan 25 22:07 vc70.idb
+-rw-rw-rw-   1 user     group      561152 Jan 25 22:07 vc70.pdb
+-rw-rw-rw-   1 user     group      291602 Jan 25 22:07 windll.obj
+
+extra\dll\Release=:
+total 5387
+-rw-rw-rw-   1 user     group        3010 Jan 25 22:36 BuildLog.htm
+-rw-rw-rw-   1 user     group       19145 Jan 25 22:24 debug.obj
+-rw-rw-rw-   1 user     group     4325376 Jan 25 22:35 dll.pch
+-rw-rw-rw-   1 user     group         466 Jan 25 22:24 fortify.obj
+-rw-rw-rw-   1 user     group        3437 Jan 25 22:24 hash.obj
+-rw-rw-rw-   1 user     group       34139 Jan 25 22:24 lp.obj
+-rw-rw-rw-   1 user     group      152090 Jan 25 22:36 lpkit.obj
+-rw-rw-rw-   1 user     group      253952 Jan 25 22:36 lpsolve.dll
+-rw-rw-rw-   1 user     group       44743 Jan 25 22:36 lpsolve.exp
+-rw-rw-rw-   1 user     group       72968 Jan 25 22:36 lpsolve.lib
+-rw-rw-rw-   1 user     group      122625 Apr 20  2003 lpsolve.map
+-rw-rw-rw-   1 user     group         956 Jan 25 22:24 lpsolve.res
+-rw-rw-rw-   1 user     group        1372 Apr 19  2003 pe.cfg
+-rw-rw-rw-   1 user     group        8673 Jan 25 22:24 presolve.obj
+-rw-rw-rw-   1 user     group       25123 Jan 25 22:24 read.obj
+-rw-rw-rw-   1 user     group       23529 Jan 25 22:24 readmps.obj
+-rw-rw-rw-   1 user     group       69604 Jan 25 22:24 solve.obj
+-rw-rw-rw-   1 user     group       58368 Apr 20  2003 vc60.idb
+-rw-rw-rw-   1 user     group      224256 Jan 25 22:36 vc70.idb
+-rw-rw-rw-   1 user     group       65757 Jan 25 22:24 windll.obj
+
+extra\liblpk=:
+total 155
+drwxrwxrwx   1 user     group           0 Nov 16  2002 Debug
+-rw-rw-rw-   1 user     group        3089 Nov 16  2002 liblpk.001
+-rw-rw-rw-   1 user     group        3273 Nov 16  2002 liblpk.dsp
+-rw-rw-rw-   1 user     group         535 Nov 16  2002 liblpk.dsw
+-rw-rw-rw-   1 user     group       91136 Jan  9  2003 liblpk.ncb
+-rw-rw-rw-   1 user     group       48640 Jan  9  2003 liblpk.opt
+-rw-rw-rw-   1 user     group        1413 Jan  9  2003 liblpk.plg
+-rw-rw-rw-   1 user     group        6158 Dec 22  2002 liblpk.vcproj
+
+extra\liblpk\Debug=:
+total 4201
+-rw-rw-rw-   1 user     group        7033 Dec 22  2002 BuildLog.htm
+-rw-rw-rw-   1 user     group       42555 Jan  9  2003 debug.obj
+-rw-rw-rw-   1 user     group       29990 Jan  9  2003 hash.obj
+-rw-rw-rw-   1 user     group      607134 Jan  9  2003 liblpk.lib
+-rw-rw-rw-   1 user     group     2975332 Jan  9  2003 liblpk.pch
+-rw-rw-rw-   1 user     group       58649 Jan  9  2003 lp.obj
+-rw-rw-rw-   1 user     group      210199 Jan  9  2003 lpkit.obj
+-rw-rw-rw-   1 user     group       38677 Jan  9  2003 presolve.obj
+-rw-rw-rw-   1 user     group       49073 Jan  9  2003 read.obj
+-rw-rw-rw-   1 user     group       50419 Jan  9  2003 readmps.obj
+-rw-rw-rw-   1 user     group      117464 Jan  9  2003 solve.obj
+-rw-rw-rw-   1 user     group       50176 Jan  9  2003 vc60.idb
+-rw-rw-rw-   1 user     group       60416 Dec 22  2002 vc70.idb
+
+extra\lp2mps=:
+total 260
+drwxrwxrwx   1 user     group           0 Nov 16  2002 Debug
+drwxrwxrwx   1 user     group           0 Dec 22  2002 Release
+-rw-rw-rw-   1 user     group         198 Apr 23  1997 SETCC
+-rwxrwxrwx   1 user     group         490 Apr 20  1997 SETHC.BAT
+-rw-rw-rw-   1 user     group        3999 Nov 16  2002 lp2mps.001
+-rw-rw-rw-   1 user     group        4081 Nov 16  2002 lp2mps.dsp
+-rw-rw-rw-   1 user     group         535 Nov 16  2002 lp2mps.dsw
+-rw-rw-rw-   1 user     group      216064 Jan  3 00:17 lp2mps.ncb
+-rw-rw-rw-   1 user     group        1126 Jul 18  2003 lp2mps.sln
+-rw-rw-rw-   1 user     group         912 Dec 22  2002 lp2mps.sln.old
+-rw-rw-rw-   1 user     group       22528 Jan  3 00:17 lp2mps.suo
+-rw-rw-rw-   1 user     group        6621 Jan  2 00:11 lp2mps.vcproj
+-rw-rw-rw-   1 user     group        4003 Dec 22  2002 lp2mps.vcproj.old
+-rw-rw-rw-   1 user     group        1189 Jan  2 00:09 pe.cfg
+
+extra\lp2mps\Debug=:
+total 3104
+-rw-rw-rw-   1 user     group        2776 Jan  3 00:15 BuildLog.htm
+-rw-rw-rw-   1 user     group       30285 Jan  2 00:11 debug.obj
+-rw-rw-rw-   1 user     group        8791 Jan  2 00:11 hash.obj
+-rw-rw-rw-   1 user     group       52923 Jan  3 00:15 lp.obj
+-rwxrwxrwx   1 user     group      389120 Jan  3 00:15 lp2mps.exe
+-rw-rw-rw-   1 user     group      768292 Jan  3 00:15 lp2mps.ilk
+-rw-rw-rw-   1 user     group        7689 Jan  2 00:11 lp2mps.obj
+-rw-rw-rw-   1 user     group      327680 Jan  3 00:15 lp2mps.pch
+-rw-rw-rw-   1 user     group      994304 Jan  3 00:15 lp2mps.pdb
+-rw-rw-rw-   1 user     group      279568 Jan  3 00:15 lpkit.obj
+-rw-rw-rw-   1 user     group       15349 Jan  2 00:11 presolve.obj
+-rw-rw-rw-   1 user     group       46765 Jan  3 00:01 read.obj
+-rw-rw-rw-   1 user     group      120708 Jan  2 00:11 solve.obj
+-rw-rw-rw-   1 user     group       60416 Jan  3 00:15 vc70.idb
+-rw-rw-rw-   1 user     group       69632 Jan  3 00:15 vc70.pdb
+
+extra\lp2mps\Release=:
+total 765
+-rw-rw-rw-   1 user     group        3030 Dec 15 23:56 BuildLog.htm
+-rw-rw-rw-   1 user     group       19070 Dec 15 23:56 debug.obj
+-rw-rw-rw-   1 user     group        3360 Dec 15 23:56 hash.obj
+-rw-rw-rw-   1 user     group       29466 Dec 15 23:56 lp.obj
+-rwxrwxrwx   1 user     group       94208 Dec 15 23:56 lp2mps.exe
+-rw-rw-rw-   1 user     group        3875 Dec 15 23:56 lp2mps.obj
+-rw-rw-rw-   1 user     group      327680 Dec 15 23:56 lp2mps.pch
+-rw-rw-rw-   1 user     group      149333 Dec 15 23:56 lpkit.obj
+-rw-rw-rw-   1 user     group        8615 Dec 15 23:56 presolve.obj
+-rw-rw-rw-   1 user     group       22958 Dec 15 23:56 read.obj
+-rw-rw-rw-   1 user     group       66427 Dec 15 23:56 solve.obj
+-rw-rw-rw-   1 user     group       52224 Dec 15 23:56 vc70.idb
+
+extra\lp_solve=:
+total 529
+-rw-rw-rw-   1 user     group         275 Sep 30  2002 A.LP
+-rw-rw-rw-   1 user     group         670 Apr 29  1997 A.MPS
+-rw-rw-rw-   1 user     group         241 Mar  4  2001 A0.LP
+-rw-rw-rw-   1 user     group         258 Mar  4  2001 A1.LP
+-rw-rw-rw-   1 user     group         575 Apr 25  1997 B.MPS
+drwxrwxrwx   1 user     group           0 Dec 18  2002 Debug
+drwxrwxrwx   1 user     group           0 Mar  8  2003 Debug no fortify
+-rw-rw-rw-   1 user     group         144 Apr 21  1997 LP1.LP
+-rw-rw-rw-   1 user     group         491 Apr 20  1997 LP1.MPS
+-rw-rw-rw-   1 user     group        3339 Nov  7  1998 LP_SOLVE.DSK
+-rw-rw-rw-   1 user     group        5303 Nov  7  1998 LP_SOLVE.PRJ
+-rw-rw-rw-   1 user     group          67 May  1  1997 P81.LP
+-rw-rw-rw-   1 user     group          67 May  1  1997 P83.LP
+-rw-rw-rw-   1 user     group          66 May  1  1997 P84.LP
+drwxrwxrwx   1 user     group           0 Dec 19 00:47 Peter
+drwxrwxrwx   1 user     group           0 Dec 22  2002 Release
+-rw-rw-rw-   1 user     group         200 Apr 23  1997 SETCC
+-rwxrwxrwx   1 user     group         492 Apr 20  1997 SETHC.BAT
+-rwxrwxrwx   1 user     group         167 Mar  3  2001 TEST.BAT
+-rwxrwxrwx   1 user     group         270 Mar  3  2001 TEST1.BAT
+-rw-rw-rw-   1 user     group        1535 Jan 18  2003 a
+-rw-rw-rw-   1 user     group        3868 Sep  8  2002 a.log
+-rw-rw-rw-   1 user     group         273 Mar  3  2001 a.lps
+-rw-rw-rw-   1 user     group         196 Sep  2  2002 a.out
+-rw-rw-rw-   1 user     group         265 Mar  3  2001 b.lps
+-rw-rw-rw-   1 user     group        1273 Sep  7  2001 job151.lps
+-rw-rw-rw-   1 user     group        1273 Sep  7  2001 job151.mps.lps
+-rw-rw-rw-   1 user     group         218 Mar  3  2001 lp1.lps
+-rw-rw-rw-   1 user     group        4107 Sep 21  2002 lp_solve.001
+-rwxrwxrwx   1 user     group          50 Sep  8  2001 lp_solve.bat
+-rw-rw-rw-   1 user     group        4436 Feb  1  2003 lp_solve.dsp
+-rw-rw-rw-   1 user     group         539 Sep 28  2002 lp_solve.dsw
+-rw-rw-rw-   1 user     group      363520 Jan 25 23:55 lp_solve.ncb
+-rw-rw-rw-   1 user     group       53760 Jul 13  2003 lp_solve.opt
+-rw-rw-rw-   1 user     group        4935 Jul 13  2003 lp_solve.plg
+-rw-rw-rw-   1 user     group        1289 Dec 19 00:47 lp_solve.sln
+-rw-rw-rw-   1 user     group        1137 Mar  8  2003 lp_solve.sln.old
+-rw-rw-rw-   1 user     group       33792 Jan 26 00:02 lp_solve.suo
+-rw-rw-rw-   1 user     group        8743 Jan 26 00:02 lp_solve.vcproj
+-rw-rw-rw-   1 user     group        5794 Mar  8  2003 lp_solve.vcproj.old
+-rw-rw-rw-   1 user     group        1813 Nov 16  2002 out1
+-rw-rw-rw-   1 user     group        1813 Nov 16  2002 out2
+-rw-rw-rw-   1 user     group        1423 Mar  3  2001 p84.lps
+-rw-rw-rw-   1 user     group        7229 Jan 17 15:18 pe.cfg
+
+extra\lp_solve\Debug=:
+total 3518
+-rw-rw-rw-   1 user     group        3835 Jan 26 00:04 BuildLog.htm
+-rw-rw-rw-   1 user     group       30329 Jan 26 00:04 debug.obj
+-rw-rw-rw-   1 user     group       27012 Jul 13  2003 debug.sbr
+-rw-rw-rw-   1 user     group        2054 Jan 26 00:04 fortify.obj
+-rw-rw-rw-   1 user     group       25307 Jul 13  2003 fortify.sbr
+-rw-rw-rw-   1 user     group        8831 Jan 26 00:04 hash.obj
+-rw-rw-rw-   1 user     group       26997 Jul 13  2003 hash.sbr
+-rw-rw-rw-   1 user     group       62552 Jan 26 00:04 lp.obj
+-rw-rw-rw-   1 user     group       36926 Jul 13  2003 lp.sbr
+-rwxrwxrwx   1 user     group      421888 Jan 26 00:04 lp_solve.exe
+-rw-rw-rw-   1 user     group      676568 Jan 26 00:04 lp_solve.ilk
+-rw-rw-rw-   1 user     group      191386 Feb  1  2003 lp_solve.map
+-rw-rw-rw-   1 user     group       43501 Jan 26 00:04 lp_solve.obj
+-rw-rw-rw-   1 user     group      327680 Jan 26 00:04 lp_solve.pch
+-rw-rw-rw-   1 user     group      748544 Jan 26 00:04 lp_solve.pdb
+-rw-rw-rw-   1 user     group       30406 Jul 13  2003 lp_solve.sbr
+-rw-rw-rw-   1 user     group      280917 Jan 26 00:04 lpkit.obj
+-rw-rw-rw-   1 user     group       87709 Jul 13  2003 lpkit.sbr
+-rw-rw-rw-   1 user     group         801 Jan 11  2003 pe.cfg
+-rw-rw-rw-   1 user     group       15389 Jan 26 00:04 presolve.obj
+-rw-rw-rw-   1 user     group       28624 Jul 13  2003 presolve.sbr
+-rw-rw-rw-   1 user     group       46433 Jan 26 00:04 read.obj
+-rw-rw-rw-   1 user     group       30810 Jul 13  2003 read.sbr
+-rw-rw-rw-   1 user     group       37844 Jan 26 00:04 readmps.obj
+-rw-rw-rw-   1 user     group       33085 Jul 13  2003 readmps.sbr
+-rw-rw-rw-   1 user     group      124354 Jan 26 00:04 solve.obj
+-rw-rw-rw-   1 user     group       60370 Jul 13  2003 solve.sbr
+-rw-rw-rw-   1 user     group       50176 Jul 13  2003 vc60.idb
+-rw-rw-rw-   1 user     group       60416 Jan 26 00:04 vc70.idb
+-rw-rw-rw-   1 user     group       69632 Jan 26 00:04 vc70.pdb
+
+extra\lp_solve\Debug no fortify=:
+total 93
+-rw-rw-rw-   1 user     group        3505 Jan 26 00:04 BuildLog.htm
+-rw-rw-rw-   1 user     group       44180 Jul 20  2003 lp_solve.dpsession
+-rw-rw-rw-   1 user     group       45452 Jul 20  2003 lp_solve1.dpsession
+
+extra\lp_solve\Peter=:
+total 2162
+-rw-rw-rw-   1 user     group        5806 Dec 19 00:54 BuildLog.htm
+-rw-rw-rw-   1 user     group       13035 Dec 19 00:54 debug.obj
+-rw-rw-rw-   1 user     group         455 Dec 19 00:54 fortify.obj
+-rw-rw-rw-   1 user     group        2821 Dec 19 00:54 hash.obj
+-rw-rw-rw-   1 user     group       27964 Dec 19 00:54 lp.obj
+-rwxrwxrwx   1 user     group      438272 Dec 19 00:54 lp_solve.exe
+-rw-rw-rw-   1 user     group      547356 Dec 19 00:54 lp_solve.ilk
+-rw-rw-rw-   1 user     group       18280 Dec 19 00:54 lp_solve.obj
+-rw-rw-rw-   1 user     group      327680 Dec 19 00:54 lp_solve.pch
+-rw-rw-rw-   1 user     group      510976 Dec 19 00:54 lp_solve.pdb
+-rw-rw-rw-   1 user     group      140014 Dec 19 00:54 lpkit.obj
+-rw-rw-rw-   1 user     group        8574 Dec 19 00:54 presolve.obj
+-rw-rw-rw-   1 user     group       21086 Dec 19 00:54 read.obj
+-rw-rw-rw-   1 user     group       18271 Dec 19 00:54 readmps.obj
+-rw-rw-rw-   1 user     group       67610 Dec 19 00:54 solve.obj
+-rw-rw-rw-   1 user     group       60416 Dec 19 00:54 vc70.idb
+
+extra\lp_solve\Release=:
+total 1075
+-rw-rw-rw-   1 user     group        7359 Jan 26 00:01 BuildLog.htm
+-rw-rw-rw-   1 user     group        2356 Jan  9  2003 a
+-rw-rw-rw-   1 user     group       19040 Jan 26 00:01 debug.obj
+-rw-rw-rw-   1 user     group         469 Jan 26 00:01 fortify.obj
+-rw-rw-rw-   1 user     group        3394 Jan 26 00:01 hash.obj
+-rw-rw-rw-   1 user     group       33989 Jan 26 00:01 lp.obj
+-rwxrwxrwx   1 user     group      180224 Jan 26 00:01 lp_solve.exe
+-rw-rw-rw-   1 user     group      104014 Feb  1  2003 lp_solve.map
+-rw-rw-rw-   1 user     group       33276 Jan 26 00:01 lp_solve.obj
+-rw-rw-rw-   1 user     group      327680 Jan 26 00:01 lp_solve.pch
+-rw-rw-rw-   1 user     group      151459 Jan 26 00:01 lpkit.obj
+-rw-rw-rw-   1 user     group         982 Jan  9  2003 pe.cfg
+-rw-rw-rw-   1 user     group        8630 Jan 26 00:01 presolve.obj
+-rw-rw-rw-   1 user     group       24801 Jan 26 00:01 read.obj
+-rw-rw-rw-   1 user     group       23662 Jan 26 00:01 readmps.obj
+-rw-rw-rw-   1 user     group       68639 Jan 26 00:01 solve.obj
+-rw-rw-rw-   1 user     group       41984 Jul 13  2003 vc60.idb
+-rw-rw-rw-   1 user     group       60416 Jan 26 00:01 vc70.idb
+
+extra\mps2lp=:
+total 328
+drwxrwxrwx   1 user     group           0 Sep 29  2002 Debug
+drwxrwxrwx   1 user     group           0 Sep 29  2002 Release
+-rw-rw-rw-   1 user     group         198 Apr 23  1997 SETCC
+-rwxrwxrwx   1 user     group         490 Apr 20  1997 SETHC.BAT
+-rw-rw-rw-   1 user     group        2505 Feb  3  2003 grp40.lp
+-rw-rw-rw-   1 user     group        3961 Sep 21  2002 mps2lp.001
+-rw-rw-rw-   1 user     group        4160 Nov 16  2002 mps2lp.dsp
+-rw-rw-rw-   1 user     group         535 Sep 29  2002 mps2lp.dsw
+-rw-rw-rw-   1 user     group      240640 Jan 25 23:26 mps2lp.ncb
+-rw-rw-rw-   1 user     group       49664 Feb  4  2003 mps2lp.opt
+-rw-rw-rw-   1 user     group        1325 Feb  3  2003 mps2lp.plg
+-rw-rw-rw-   1 user     group         901 Jul  8  2003 mps2lp.sln
+-rw-rw-rw-   1 user     group         912 Feb 20  2003 mps2lp.sln.old
+-rw-rw-rw-   1 user     group       13824 Jan 25 23:26 mps2lp.suo
+-rw-rw-rw-   1 user     group        4312 Jan  2 00:12 mps2lp.vcproj
+-rw-rw-rw-   1 user     group        4072 Dec 22  2002 mps2lp.vcproj.old
+-rw-rw-rw-   1 user     group        1663 Jan  2 00:12 pe.cfg
+
+extra\mps2lp\Debug=:
+total 3306
+-rw-rw-rw-   1 user     group        3183 Jan 25 22:50 BuildLog.htm
+-rw-rw-rw-   1 user     group       30285 Jan 25 22:50 debug.obj
+-rw-rw-rw-   1 user     group        8791 Jan 25 22:50 hash.obj
+-rw-rw-rw-   1 user     group       62512 Jan 25 22:50 lp.obj
+-rw-rw-rw-   1 user     group      280873 Jan 25 22:50 lpkit.obj
+-rw-rw-rw-   1 user     group       42560 Nov 29 17:04 mps2lp.dpsession
+-rwxrwxrwx   1 user     group      421888 Jan 25 22:50 mps2lp.exe
+-rw-rw-rw-   1 user     group      673908 Jan 25 22:50 mps2lp.ilk
+-rw-rw-rw-   1 user     group        7913 Jan 25 22:50 mps2lp.obj
+-rw-rw-rw-   1 user     group      327680 Jan 25 22:50 mps2lp.pch
+-rw-rw-rw-   1 user     group     1068032 Jan 25 22:50 mps2lp.pdb
+-rw-rw-rw-   1 user     group       42560 Nov 29 17:04 mps2lp1.dpsession
+-rw-rw-rw-   1 user     group       15349 Jan 25 22:50 presolve.obj
+-rw-rw-rw-   1 user     group       46650 Jan 25 22:50 read.obj
+-rw-rw-rw-   1 user     group       37800 Jan 25 22:50 readmps.obj
+-rw-rw-rw-   1 user     group      120720 Jan 25 22:50 solve.obj
+-rw-rw-rw-   1 user     group       50176 Feb  3  2003 vc60.idb
+-rw-rw-rw-   1 user     group       60416 Jan 25 22:50 vc70.idb
+-rw-rw-rw-   1 user     group       77824 Jan 25 22:50 vc70.pdb
+
+extra\mps2lp\Release=:
+total 1091
+-rw-rw-rw-   1 user     group        3214 Jan  2 20:24 BuildLog.htm
+-rw-rw-rw-   1 user     group       19038 Jan  2 20:24 debug.obj
+-rw-rw-rw-   1 user     group        3392 Jan  2 20:24 hash.obj
+-rw-rw-rw-   1 user     group       29672 Jan  2 20:24 lp.obj
+-rw-rw-rw-   1 user     group      150260 Jan  2 20:24 lpkit.obj
+-rw-rw-rw-   1 user     group       40485 Nov 29 17:05 mps2lp.dpsession
+-rwxrwxrwx   1 user     group      102400 Jan  2 20:24 mps2lp.exe
+-rw-rw-rw-   1 user     group        4209 Jan  2 20:24 mps2lp.obj
+-rw-rw-rw-   1 user     group      327680 Jan  2 20:24 mps2lp.pch
+-rw-rw-rw-   1 user     group       40485 Nov 29 17:05 mps2lp1.dpsession
+-rw-rw-rw-   1 user     group       40429 Nov 29 17:05 mps2lp2.dpsession
+-rw-rw-rw-   1 user     group       40429 Nov 29 17:05 mps2lp3.dpsession
+-rw-rw-rw-   1 user     group       40429 Nov 29 17:05 mps2lp4.dpsession
+-rw-rw-rw-   1 user     group       40429 Nov 29 17:05 mps2lp5.dpsession
+-rw-rw-rw-   1 user     group        8628 Jan  2 20:24 presolve.obj
+-rw-rw-rw-   1 user     group       24688 Jan  2 20:24 read.obj
+-rw-rw-rw-   1 user     group       23660 Jan  2 20:24 readmps.obj
+-rw-rw-rw-   1 user     group       66296 Jan  2 20:24 solve.obj
+-rw-rw-rw-   1 user     group       41984 Feb  3  2003 vc60.idb
+-rw-rw-rw-   1 user     group       60416 Jan  2 20:24 vc70.idb
+
+extra\oops=:
+total 437
+drwxrwxrwx   1 user     group           0 Nov 16  2002 Debug
+-rw-rw-rw-   1 user     group         430 Jul 31 21:19 lp.lp
+-rw-rw-rw-   1 user     group        4419 Jul 10  2003 lp1.lp
+-rw-rw-rw-   1 user     group        4487 Jul 10  2003 lp2.lp
+-rw-rw-rw-   1 user     group          79 Jan 17  2003 model.lp
+-rw-rw-rw-   1 user     group         530 Jan 23  2003 model.mps
+-rw-rw-rw-   1 user     group        9435 Jan 25 22:17 oops.c
+-rw-rw-rw-   1 user     group        6032 Feb  1  2003 oops.dsp
+-rw-rw-rw-   1 user     group         531 Nov 16  2002 oops.dsw
+-rw-rw-rw-   1 user     group      297984 Jan 25 22:24 oops.ncb
+-rw-rw-rw-   1 user     group       54784 Feb 21  2003 oops.opt
+-rw-rw-rw-   1 user     group        1469 Feb 20  2003 oops.plg
+-rw-rw-rw-   1 user     group         897 May  4  2003 oops.sln
+-rw-rw-rw-   1 user     group         908 Dec 22  2002 oops.sln.old
+-rw-rw-rw-   1 user     group       20480 Jan 25 22:24 oops.suo
+-rw-rw-rw-   1 user     group        4570 Jan 19 22:43 oops.vcproj
+-rw-rw-rw-   1 user     group        4260 Apr  3  2003 oops.vcproj.old
+-rw-rw-rw-   1 user     group        1392 Jan 19 23:08 pe.cfg
+-rw-rw-rw-   1 user     group       26426 Mar  8  2003 pilot4'.out
+
+extra\oops\Debug=:
+total 3469
+-rw-rw-rw-   1 user     group        2867 Jan 25 22:17 BuildLog.htm
+-rw-rw-rw-   1 user     group       32800 Jan 19 22:50 debug.obj
+-rw-rw-rw-   1 user     group       50173 Jan 25 22:17 fortify.obj
+-rw-rw-rw-   1 user     group       11362 Jan 19 22:50 hash.obj
+-rw-rw-rw-   1 user     group       67090 Jan 25 22:17 lp.obj
+-rw-rw-rw-   1 user     group      335586 Jan 25 22:17 lpkit.obj
+-rwxrwxrwx   1 user     group      520192 Jan 25 22:17 oops.exe
+-rw-rw-rw-   1 user     group      756612 Jan 25 22:17 oops.ilk
+-rw-rw-rw-   1 user     group        6082 Jan 25 22:17 oops.obj
+-rw-rw-rw-   1 user     group      262144 Jan 25 22:17 oops.pch
+-rw-rw-rw-   1 user     group     1043456 Jan 25 22:17 oops.pdb
+-rw-rw-rw-   1 user     group       19542 Jan 19 22:50 presolve.obj
+-rw-rw-rw-   1 user     group       55810 Jan 25 22:17 read.obj
+-rw-rw-rw-   1 user     group       44069 Jan 19 22:50 readmps.obj
+-rw-rw-rw-   1 user     group      141880 Jan 19 22:50 solve.obj
+-rw-rw-rw-   1 user     group       50176 Feb 20  2003 vc60.idb
+-rw-rw-rw-   1 user     group       76800 Jan 25 22:17 vc70.idb
+-rw-rw-rw-   1 user     group       69632 Jan 25 22:17 vc70.pdb
+
+extra\vb=:
+total 495
+-rw-rw-rw-   1 user     group       11767 Jan 20 21:56 Module1.bao
+-rw-rw-rw-   1 user     group       11352 Jan 25 22:39 Module1.bas
+drwxrwxrwx   1 user     group           0 Jul  9  2003 bak
+drwxrwxrwx   1 user     group           0 Jul  9  2003 bak2
+-rw-rw-rw-   1 user     group         704 Jan  4 19:02 demo.vbp
+-rw-rw-rw-   1 user     group          61 Jan 25 22:40 demo.vbw
+-rwxrwxrwx   1 user     group         111 Jan  7  2003 distrib.bat
+-rw-rw-rw-   1 user     group          36 Mar 23  2003 distribsrc.txt
+-rw-rw-rw-   1 user     group         221 Jan 25 22:39 log.txt
+-rw-rw-rw-   1 user     group           0 Jan 20 21:59 log1.txt
+-rw-rw-rw-   1 user     group         125 Jan 25 22:39 lp1.lp
+-rw-rw-rw-   1 user     group         530 Jan 25 22:39 lp1.mps
+-rw-rw-rw-   1 user     group         232 Jul 10  2003 lp2.lp
+-rw-rw-rw-   1 user     group        1101 Jul 10  2003 lp2.mps
+-rw-rw-rw-   1 user     group       10943 Jul 17  2003 lp_solve_4.0_vb.zip
+-rw-rw-rw-   1 user     group       38817 Jan  4 19:01 lpsolve.bas
+-rw-rw-rw-   1 user     group      253952 Jan 25 22:36 lpsolve.dll
+-rw-rw-rw-   1 user     group      147456 Feb  3  2003 lpsolve.dlo
+-rw-rw-rw-   1 user     group         360 Jan 25 22:39 oops.bas
+-rw-rw-rw-   1 user     group        2519 Jan 25 22:40 pe.cfg
+-rw-rw-rw-   1 user     group       14318 Jan 25 22:39 result.txt
+-rw-rw-rw-   1 user     group         444 Jan 20 22:25 result1.txt
+-rw-rw-rw-   1 user     group         109 Jan 19 21:05 t1.lp
+
+extra\vb\bak=:
+total 175
+-rw-rw-rw-   1 user     group         221 Jul  9  2003 log.txt
+-rw-rw-rw-   1 user     group         122 Jul  9  2003 lp1.lp
+-rw-rw-rw-   1 user     group         530 Jul  9  2003 lp1.mps
+-rw-rw-rw-   1 user     group         232 Jul  9  2003 lp2.lp
+-rw-rw-rw-   1 user     group        1101 Jul  9  2003 lp2.mps
+-rw-rw-rw-   1 user     group      155648 Apr 21  2003 lpsolve.dll
+-rw-rw-rw-   1 user     group         984 Jul  9  2003 pe.cfg
+-rw-rw-rw-   1 user     group       16301 Jul  9  2003 result.txt
+
+extra\vb\bak2=:
+total 178
+-rw-rw-rw-   1 user     group         221 Jul  9  2003 log.txt
+-rw-rw-rw-   1 user     group         122 Jul  9  2003 lp1.lp
+-rw-rw-rw-   1 user     group         530 Jul  9  2003 lp1.mps
+-rw-rw-rw-   1 user     group         232 Jul  9  2003 lp2.lp
+-rw-rw-rw-   1 user     group        1101 Jul  9  2003 lp2.mps
+-rw-rw-rw-   1 user     group      159744 Jul  2  2003 lpsolve.dll
+-rw-rw-rw-   1 user     group       16301 Jul  9  2003 result.txt
+
+extra\vb.net=:
+total 253
+-rw-rw-rw-   1 user     group         908 Mar  4  2003 AssemblyInfo.vb
+drwxrwxrwx   1 user     group           0 Mar 22  2003 bin
+-rw-rw-rw-   1 user     group         893 Apr 21  2003 demo.sln
+-rw-rw-rw-   1 user     group         904 Mar 22  2003 demo.sln.old
+-rw-rw-rw-   1 user     group        8192 Jan  4 19:12 demo.suo
+-rw-rw-rw-   1 user     group       12197 Jan  4 19:11 demo.vb
+-rw-rw-rw-   1 user     group        4195 Apr 21  2003 demo.vbproj
+-rw-rw-rw-   1 user     group        1814 Jan  4 19:12 demo.vbproj.user
+-rwxrwxrwx   1 user     group         123 Mar  4  2003 distrib.bat
+-rw-rw-rw-   1 user     group          80 Mar 23  2003 distribsrc.txt
+-rw-rw-rw-   1 user     group         221 Jan  4 19:12 log.txt
+-rw-rw-rw-   1 user     group         122 Jan  4 19:12 lp1.lp
+-rw-rw-rw-   1 user     group         530 Jan  4 19:12 lp1.mps
+-rw-rw-rw-   1 user     group         232 Jul 10  2003 lp2.lp
+-rw-rw-rw-   1 user     group        1101 Jul 10  2003 lp2.mps
+-rw-rw-rw-   1 user     group        9794 Jul 17  2003 lp_solve_4.0_vb.net.zip
+-rw-rw-rw-   1 user     group      159744 Jul 10  2003 lpsolve.dll
+-rw-rw-rw-   1 user     group       27496 Jan  4 19:10 lpsolve4.vb
+drwxrwxrwx   1 user     group           0 Mar 22  2003 obj
+-rw-rw-rw-   1 user     group        1188 Jan  4 19:12 pe.cfg
+-rw-rw-rw-   1 user     group        7168 Mar 22  2003 project1.suo
+-rw-rw-rw-   1 user     group       12890 Jan  4 19:12 result.txt
+
+extra\vb.net\bin=:
+total 62
+-rwxrwxrwx   1 user     group       40960 Jan  4 19:11 demo.exe
+-rw-rw-rw-   1 user     group       22016 Jan  4 19:11 demo.pdb
+
+extra\vb.net\obj=:
+total 0
+drwxrwxrwx   1 user     group           0 Mar 22  2003 Debug
+
+extra\vb.net\obj\Debug=:
+total 62
+drwxrwxrwx   1 user     group           0 Mar 22  2003 TempPE
+-rwxrwxrwx   1 user     group       40960 Jan  4 19:11 demo.exe
+-rw-rw-rw-   1 user     group       22016 Jan  4 19:11 demo.pdb
+drwxrwxrwx   1 user     group           0 Mar 22  2003 temp
+
+extra\vb.net\obj\Debug\TempPE=:
+total 0
+
+extra\vb.net\obj\Debug\temp=:
+total 0
+
+lp_examples=:
+total 110
+-rw-rw-rw-   1 user     group         330 Nov 16  2002 demo_lag.lp
+-rw-rw-rw-   1 user     group          33 Jan 25 23:46 demo_lag.out
+-rw-rw-rw-   1 user     group          65 Jul 12  2003 ex1.lp
+-rw-rw-rw-   1 user     group          32 Jan 25 23:46 ex1.out
+-rw-rw-rw-   1 user     group        6124 Nov 11 16:51 ex1sc.lp
+-rw-rw-rw-   1 user     group       14854 Nov 16  2002 ex1sc.mps
+-rw-rw-rw-   1 user     group          38 Jan 25 23:46 ex1sc.out
+-rw-rw-rw-   1 user     group         207 Jan 25 23:43 ex1sos.lp
+-rw-rw-rw-   1 user     group        1023 Nov 16  2002 ex1sos.mps
+-rw-rw-rw-   1 user     group          33 Jan 25 23:46 ex1sos.out
+-rw-rw-rw-   1 user     group          58 Jan 16  2001 ex2.lp
+-rw-rw-rw-   1 user     group          38 Jan 25 23:46 ex2.out
+-rw-rw-rw-   1 user     group        6118 Nov 11 16:51 ex2sc.lp
+-rw-rw-rw-   1 user     group       14854 Nov 16  2002 ex2sc.mps
+-rw-rw-rw-   1 user     group          38 Jan 25 23:45 ex2sc.out
+-rw-rw-rw-   1 user     group         207 Jan 25 23:44 ex2sos.lp
+-rw-rw-rw-   1 user     group        1093 Nov 16  2002 ex2sos.mps
+-rw-rw-rw-   1 user     group          34 Jan 25 23:47 ex2sos.out
+-rw-rw-rw-   1 user     group          55 Jan 16  2001 ex3.lp
+-rw-rw-rw-   1 user     group          35 Jan 25 23:46 ex3.out
+-rw-rw-rw-   1 user     group         207 Jan 25 23:44 ex3sos.lp
+-rw-rw-rw-   1 user     group        1124 Nov 16  2002 ex3sos.mps
+-rw-rw-rw-   1 user     group          34 Jan 25 23:47 ex3sos.out
+-rw-rw-rw-   1 user     group        4821 Jan 16  2001 ex4.lp
+-rw-rw-rw-   1 user     group          38 Jan 25 23:46 ex4.out
+-rw-rw-rw-   1 user     group         218 Jan 25 23:44 ex4sos.lp
+-rw-rw-rw-   1 user     group        1130 Nov 16  2002 ex4sos.mps
+-rw-rw-rw-   1 user     group          34 Jan 25 23:47 ex4sos.out
+-rw-rw-rw-   1 user     group        9052 Dec 21 17:34 ex5.lp
+-rw-rw-rw-   1 user     group          38 Jan 25 23:46 ex5.out
+-rw-rw-rw-   1 user     group        6912 Nov 16  2002 ex5sos.mps
+-rw-rw-rw-   1 user     group          36 Jan 25 23:47 ex5sos.out
+-rw-rw-rw-   1 user     group         512 Jan 16  2001 ex6.lp
+-rw-rw-rw-   1 user     group          36 Jan 25 23:46 ex6.out
+-rw-rw-rw-   1 user     group        6912 Nov 16  2002 ex6sos.mps
+-rw-rw-rw-   1 user     group          38 Jan 25 23:47 ex6sos.out
+-rw-rw-rw-   1 user     group        8057 Jul 21  2003 ex7.lp
+-rw-rw-rw-   1 user     group          39 Jan 25 23:46 ex7.out

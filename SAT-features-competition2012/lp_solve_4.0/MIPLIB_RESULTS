@@ -1,0 +1,183 @@
+Below are the results obtained with lp_solve version 4.0 on the miplib 3 LP
+benchmark set.  CPU times are on a WINDOWS XP (2 GHZ Intel Pentium 4 CPU with
+512 MB RAM).
+
+Please bear in mind that many of the miplib examples are considered difficult.
+lp_solve employs a rather simple branch-and-bound scheme to solve MILP
+problems and should not be expected to solve problems with a very large number
+(>100) of integer variables in reasonable time.
+There are commercial LP packages on the market that cannot solve them all.
+But, there are also packages that can.
+
+A dash in the CPU time column indicates lp_solve ran into (and detected)
+unrecoverable numerical trouble.
+
+a) no scaling
+b) Numerical range-based scaling (-s)
+c) Geometric scaling (-s1)
+d) Curtis-reid scaling (-s2)
+e) no scaling, presolve (-presolve)
+f) Numerical range-based scaling and presolve (-s -presolve)
+g) Geometric scaling and presolve (-s1 -presolve)
+h) Curtis-reid scaling and presolve (-s2 -presolve)
+i) Numerical range-based scaling, also integer columns (-s -si)
+j) Geometric scaling, also integer columns (-s1, -si)
+k) Curtis-reid scaling, also integer columns (-s2, -si)
+l) Numerical range-based scaling, also integer columns and presolve (-s -si -presolve)
+m) Geometric scaling, also integer columns and presolve (-s1 -si -presolve)
+n) Curtis-reid scaling, also integer columns and presolve (-s2 -si -presolve)
+
+Times are in seconds. Note that times <0.02s should be considered inacurate.
+Times are only to optimize the model and eventually do scaling and presolve.
+Times do not include time to read the model.
+
+A timeout of 600 seconds (10 minutes) was set. When no solution was found
+in that time, the optimization is aborted. timeout is shown as time in
+that case.
+
+                       PROBLEM SUMMARY TABLE
+
+Name       Rows   Cols Nonzeros    a       b       c       d       e       f       g       h       i       j       k       l       m       n
+------------------------------------------------------------------------------------------------------------------------------------------------
+10TEAMS     231   2025    14175 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout    -    Timeout
+AIR03       125  10757   101785   1.750   1.281   1.484   1.765   1.750   1.281   1.468   1.797   1.422   1.593   1.765   1.469   1.593   1.797
+AIR04       824   8904    81869    -       -       -       -       -       -       -       -       -       -       -       -       -       -
+AIR05       427   7195    59316    -       -    Timeout Timeout    -       -    Timeout    -       -       -       -       -       -       -
+ARKI001    1049   1388    20440    -      Inf      -      Inf      -      Inf      -      Inf      -       -      Inf      -       -      Inf
+BELL3A      124    133      441 151.515 154.031 197.140 155.812 149.187 150.078 191.062 152.094 169.078 219.296 170.516 165.062 210.860 166.609
+BELL5        92    104      340 495.656 529.406  94.672 521.640 490.609 524.218  93.921 516.453 574.578 584.219 596.328 569.656 578.875 587.906
+BLEND2      275    353     1497    -    Timeout Timeout Timeout    -    Timeout Timeout Timeout Timeout    -    Timeout Timeout    -    Timeout
+CAP6000    2177   6000    54238    -       -       -       -       -       -       -       -    Timeout Timeout Timeout Timeout Timeout Timeout
+DANO3MIP   3203  13873    79656    -       -       -      Inf      -       -       -      Inf      -       -       -       -       -       -
+DANOINT     665    521     3233    -    Timeout Timeout    -       -    Timeout Timeout    -    Timeout Timeout    -    Timeout Timeout    -
+DCMULTI       0      0     3233    -       -       -       -       -       -       -       -       -       -       -       -       -       -
+DSBMIP     1183   1886     8434   Inf     Inf     Inf     Inf     Inf     Inf     Inf     Inf     Inf      -      Inf     Inf     Inf     Inf
+EGOUT        99    141      392   5.281   5.765   5.671   5.531   5.281   5.937   5.718   6.140   5.703   5.703   5.578   5.640   5.750   5.656
+ENIGMA       22    100      298   2.688   3.218   1.906   2.921   2.687   3.171   1.953   2.937 Timeout   1.765 Timeout Timeout   1.796 Timeout
+FAST0507    508  63009   472358    -       -       -       -       -       -       -       -       -       -       -       -       -       -
+FIBER       364   1298     4198 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout    -
+FIXNET6     479    878     2550 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+FLUGPL       19     18       64   0.078   0.078   0.078   0.078   0.093   0.078   0.093   0.078   0.078   0.093   0.093   0.093   0.093   0.093
+GEN         781    870     3174 225.640 Timeout 259.844 235.125 227.015 Timeout 259.860 235.016 Timeout 218.719 200.734 Timeout 218.688 200.890
+GESA2      1393   1224     6000 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+GESA2_O    1249   1224     4608 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+GESA3      1369   1152     5736 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+GESA3_O    1225   1152     4416 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+GT2          30    188      468 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+HARP2       113   2993     8833    -    Timeout Timeout Timeout    -    Timeout Timeout Timeout    -       -       -       -       -       -
+KHB05250    102   1350     3973  37.032  37.547  37.375   Inf    36.453  37.610  37.360   Inf    35.110  16.703   Inf    35.125  16.781   Inf
+L152LAV      98   1989    11911  61.859  55.390  61.704  61.782  61.782  55.390  61.640  64.437  74.328  67.437  61.844  74.406  67.407  61.797
+LSEU         29     89      394  22.735  21.640  21.953  21.953  22.688  21.640  21.937  22.000  29.234  26.859  27.937  29.234  26.843  27.921
+MISC03       97    160     2054   0.828   0.765   0.750   0.750   0.828   0.765   0.750   0.765   0.703   0.828   0.828   0.719   0.828   0.828
+MISC06      821   1808     5860    -       -      8.953   6.609    -      5.719   7.109   6.015    -      7.812   6.000   5.781   7.125   5.875
+MISC07      213    260     8620    -     90.969  88.125    -       -     91.015  88.078    -     90.094 100.875    -     90.110 100.844    -
+MITRE      2055  10724    49028   Inf   Timeout    -      Inf      -    Timeout    -    Timeout    -      Inf      -       -       -       -
+MOD008        7    319     1562 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+MOD010      147   2655    13858  70.437  66.829  70.422  70.704  70.610  66.938  70.375  70.672  93.032  89.344  70.813  93.032  92.032  70.657
+MOD011     4481  10958    29839 Timeout    -       -       -    Timeout Timeout    -       -       -       -       -       -       -       -
+MODGLOB     292    422     1390 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+NOSWOT      183    128      760    -       -       -       -       -       -       -       -       -       -       -       -       -       -
+NW04         37  87482   724148 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout    -       -    Timeout    -       -    Timeout
+P0033        17     33      131   0.313   0.296   0.296   0.296   0.281   0.281   0.281   0.312   0.265   0.265   0.281   0.265   0.266   0.281
+P0201       134    201     2124  12.750  12.765  12.890  12.891  12.875  12.734  12.969  12.906  13.813  10.937  12.718  13.906  10.890  12.718
+P0282       242    282     2248 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+P0548       177    548     2127 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+P2756       756   2756    11103 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+PK1          46     86      916 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+PP08A       137    240      656 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+PP08AC~1    247    240     1015 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout    -       -       -       -       -
+QIU        1193    840     3744    -       -       -       -       -       -       -       -       -       -       -       -       -       -
+QNET1       504   1541     4746    -       -       -    Timeout    -       -       -    Timeout    -       -    Timeout    -       -    Timeout
+QNET1_O     457   1541     4338    -       -       -    Timeout    -       -       -    Timeout    -       -    Timeout    -       -    Timeout
+RENTACAR   6804   9557    42019    -      Inf      -      Inf      -      Inf      -      Inf      -       -      Inf     Inf      -      Inf
+RGN          25    180      540   1.062   1.188   1.125   1.078   1.093   1.172   1.125   1.093   1.171   1.078   1.156   1.156   1.093   1.141
+ROUT          0      0      540    -       -       -       -       -       -       -       -       -       -       -       -       -       -
+SET1CH      493    712     1884 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+SEYMOUR    4945   1372    34921    -       -       -       -       -       -       -       -       -       -       -       -       -       -
+STEIN27     119     27      405   3.500   3.656   3.687   3.671   3.468   3.641   3.656   3.640   2.562   2.546   3.656   2.547   2.578   3.656
+STEIN45     332     45     1079 223.156 230.296 230.328 230.234 222.485 230.156 230.281 230.171 165.656 165.656 233.063 165.750 165.781 230.203
+VPM1        235    378      917 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+VPM2        235    378     1085 Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout Timeout
+
+
+Objective values:
+
+Name       Rows   Cols Nonzeros     a         b         c         d         e         f         g         h         i         j         k         l         m         n
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10TEAMS     231   2025    14175   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout     -       Timeout
+AIR03       125  10757   101785    340160    340160    340160    340160    340160    340160    340160    340160    340160    340160    340160    340160    340160    340160
+AIR04       824   8904    81869     -         -         -         -         -         -         -         -         -         -         -         -         -         -
+AIR05       427   7195    59316     -         -       Timeout   Timeout     -         -       Timeout     -         -         -         -         -         -         -
+ARKI001    1049   1388    20440     -        Inf        -        Inf        -        Inf        -        Inf        -         -        Inf        -         -        Inf
+BELL3A      124    133      441    878430    878430    878430    878430    878430    878430    878430    878430    878430    878430    878430    878430    878430    878430
+BELL5        92    104      340   8966410   8966410   8966410   8966410   8966410   8966410   8966410   8966410   8966410   8966410   8966410   8966410   8966410   8966410
+BLEND2      275    353     1497     -       Timeout   Timeout   Timeout     -       Timeout   Timeout   Timeout   Timeout     -       Timeout   Timeout     -       Timeout
+CAP6000    2177   6000    54238     -         -         -         -         -         -         -         -       Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+DANO3MIP   3203  13873    79656     -         -         -        Inf        -         -         -        Inf        -         -         -         -         -         -
+DANOINT     665    521     3233     -       Timeout   Timeout     -         -       Timeout   Timeout     -       Timeout   Timeout     -       Timeout   Timeout     -
+DCMULTI       0      0     3233     -         -         -         -         -         -         -         -         -         -         -         -         -         -
+DSBMIP     1183   1886     8434    Inf       Inf       Inf       Inf       Inf       Inf       Inf       Inf       Inf        -        Inf       Inf       Inf       Inf
+EGOUT        99    141      392   568.101   568.101   568.101   568.101   568.101   568.101   568.101   568.101   568.101   568.101   568.101   568.101   568.101   568.101
+ENIGMA       22    100      298         0         0         0         0         0         0         0         0   Timeout         0   Timeout   Timeout         0   Timeout
+FAST0507    508  63009   472358     -         -         -         -         -         -         -         -         -         -         -         -         -         -
+FIBER       364   1298     4198   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout     -
+FIXNET6     479    878     2550   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+FLUGPL       19     18       64   1201500   1201500   1201500   1201500   1201500   1201500   1201500   1201500   1201500   1201500   1201500   1201500   1201500   1201500
+GEN         781    870     3174    112313   Timeout    112313    112313    112313   Timeout    112313    112313   Timeout    112313    112313   Timeout    112313    112313
+GESA2      1393   1224     6000   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+GESA2_O    1249   1224     4608   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+GESA3      1369   1152     5736   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+GESA3_O    1225   1152     4416   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+GT2          30    188      468   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+HARP2       113   2993     8833     -       Timeout   Timeout   Timeout     -       Timeout   Timeout   Timeout     -         -         -         -         -         -
+KHB05250    102   1350     3973 106940000 106940000 106940000    Inf    106940000 106940000 106940000    Inf    107343000 107955000    Inf    107343000 107955000    Inf
+L152LAV      98   1989    11911      4722      4722      4722      4722      4722      4722      4722      4722      4722      4722      4722      4722      4722      4722
+LSEU         29     89      394      1120      1120      1120      1120      1120      1120      1120      1120      1120      1120      1120      1120      1120      1120
+MISC03       97    160     2054      3360      3360      3360      3360      3360      3360      3360      3360      3360      3360      3360      3360      3360      3360
+MISC06      821   1808     5860     -         -       12850.9   12850.9     -       12850.9   12850.9   12850.9     -       12850.9   12850.9   12850.9   12850.9   12850.9
+MISC07      213    260     8620     -          2810      2810     -         -          2810      2810     -          2810      2810     -          2810      2810     -
+MITRE      2055  10724    49028    Inf      Timeout     -        Inf        -       Timeout     -       Timeout     -        Inf        -         -         -         -
+MOD008        7    319     1562   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+MOD010      147   2655    13858      6548      6548      6548      6548      6548      6548      6548      6548      6548      6548      6548      6548      6548      6548
+MOD011     4481  10958    29839   Timeout     -         -         -       Timeout   Timeout     -         -         -         -         -         -         -         -
+MODGLOB     292    422     1390   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+NOSWOT      183    128      760     -         -         -         -         -         -         -         -         -         -         -         -         -         -
+NW04         37  87482   724148   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout     -         -       Timeout     -         -       Timeout
+P0033        17     33      131      3089      3089      3089      3089      3089      3089      3089      3089      3089      3089      3089      3089      3089      3089
+P0201       134    201     2124      7615      7615      7615      7615      7615      7615      7615      7615      7615      7615      7615      7615      7615      7615
+P0282       242    282     2248   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+P0548       177    548     2127   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+P2756       756   2756    11103   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+PK1          46     86      916   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+PP08A       137    240      656   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+PP08AC~1    247    240     1015   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout     -         -         -         -         -
+QIU        1193    840     3744     -         -         -         -         -         -         -         -         -         -         -         -         -         -
+QNET1       504   1541     4746     -         -         -       Timeout     -         -         -       Timeout     -         -       Timeout     -         -       Timeout
+QNET1_O     457   1541     4338     -         -         -       Timeout     -         -         -       Timeout     -         -       Timeout     -         -       Timeout
+RENTACAR   6804   9557    42019     -        Inf        -        Inf        -        Inf        -        Inf        -         -        Inf       Inf        -        Inf
+RGN          25    180      540      82.2      82.2      82.2      82.2      82.2      82.2      82.2      82.2      82.2      82.2      82.2      82.2      82.2      82.2
+ROUT          0      0      540     -         -         -         -         -         -         -         -         -         -         -         -         -         -
+SET1CH      493    712     1884   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+SEYMOUR    4945   1372    34921     -         -         -         -         -         -         -         -         -         -         -         -         -         -
+STEIN27     119     27      405        18        18        18        18        18        18        18        18        18        18        18        18        18        18
+STEIN45     332     45     1079        30        30        30        30        30        30        30        30        30        30        30        30        30        30
+VPM1        235    378      917   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+VPM2        235    378     1085   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout   Timeout
+
+
+Total 59 models
+19 models could be solved
+Solved correctly with a): 17
+Solved correctly with b): 17
+Solved correctly with c): 19
+Solved correctly with d): 17
+Solved correctly with e): 17
+Solved correctly with f): 18
+Solved correctly with g): 19
+Solved correctly with h): 17
+Solved correctly with i): 16
+Solved correctly with j): 19
+Solved correctly with k): 16
+Solved correctly with l): 17
+Solved correctly with m): 19
+Solved correctly with n): 16

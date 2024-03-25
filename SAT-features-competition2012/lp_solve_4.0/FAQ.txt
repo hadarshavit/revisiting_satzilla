@@ -1,0 +1,123 @@
+- Where can I find the latest version of lp_solve?
+There is a yahoo group that bundles all activities of the lp_solve community. You have to register
+but this is free. You find there the latest sources, examples and manuals.
+http://groups.yahoo.com/group/lp_solve/
+
+- What are the default bounds on variables?
+As all (at least, simplex) lp solvers, the default lower bound on a variable is 0 and the default
+upper bound is unlimited.
+
+- Is it possible to set negative bounds on variables?
+Yes, this is perfectly possible.
+
+- Is it possible to set a minus infinite lower bound on a variable?
+Yes, this is possible. In the lp or mps file, use as lower bound 1e-24
+If you use the api call, use get_infinite(lp)
+Note that lp_solve splits this variable in 2 if there is a positive or no upper bound.
+This is done automatically by lp_solve. Because of this, the model becomes larger and thus
+can take some more time to solve, so only put a minus infinity lower bound on a variable
+when it is needed.
+
+- What is the layout of the lp and/or mps format?
+See the help file
+
+- lp_solve fails to solve my model. What can I do?
+lp_solve has a lot of options. See lp_solve -h
+Especially consider to use scaling via the -s options
+
+- Can lp_solve handle non-lineair equations?
+No, lp_solve can only handle lineair constraints. However it also supports integer
+variables and semi-continuous variables and special ordered sets. This can be a help to simulate some
+non-linearities.
+
+- Is there documentation about the api interface?
+Yes, there are html (help) files. See the Files section.
+
+- What is the maximum number of rows/columns that lp_solve can handle?
+There is no fixed limit. Only available memory is a limit.
+
+- Can lp_solve be called from .NET?
+Yes it can. There is a VB.NET and a C# example in the Files section.
+
+- The examples don't work. I get an error running them. Some dll can not be found.
+The examples call a dll that contains the lp_solve routines. This dll is called lpsolve.dll
+and must be on the system either in the directory of the application or somewhere in the path.
+This dll is contained in the windows binaries archive in the files section.
+
+- Can I use lp_solve in commercial code.
+Yes you can. However read the GNU LESSER GENERAL PUBLIC LICENSE which you can find in LGPL.txt
+
+- Does the lp_solve lp format support comments?
+Yes it does. Put the comments between /* */
+It can be anywhere in the text, even over multiple lines. Just like in C
+lp_solve 4.0.1.11 and newer also supports the C++ line comment //
+
+- I want to compile lp_solve myself, but I get link errors. Also what should I do with lp.y, lex.l?
+lp.y is a yacc file. It can be translated to C via the bison or yacc commands.
+lex.l is a lex file. It can be translated to C via the flex or lex commands.
+All unix environments have these commands. There are also windows versions available.
+For example at http://unxutils.sourceforge.net/
+In the support folder in the files section you can also find the translated C versions of these files.
+Also only include lp.c in your compile project, not lex.c. lex.c is automatically #included by lp.c
+so you don't have to (and may not) include it yourself again in the project.
+To compile lp_solve, you must use make or gmake and a Makefile. There are several example makefile
+in the source included like Makefile.linux, Makefile.msc. Copy the Makefile for the platform you are
+working on to Makefile and then enter make or gmake. Note that for WINDOWS, you must use gnu make
+because MS make hasn't enough functionality. You can find gmake at http://unxutils.sourceforge.net/
+
+- lp.c and lex.c that are generated on my system are different from the versions that can be found in
+the support folder in the files section. Are the latest versions of these files on your site?
+Depending on the platform, the command used and the version of the command, these files are indeed
+different. That is not a problem. You can compare this with a compiler. The same source code generates
+totally different binaries, depending on the compiler used and its version, but the programs react the
+same (at least, they should ...).
+
+- When I start the lp_solve program, nothing happens. I just get a blinking cursor. If I enter a command
+like lp1 = make_lp(0,4), I get a parse error. What is wrong here? How do I use the program?
+lp_solve is a library with a set of routines with purpose to solve a MIP model. These routines are
+sometimes refered as the API (Application Programming Interface). These routines can be used in a
+C-program to solve MIP models. This is for example demonstrated in the demo program. Under Windows there
+is also a dll available that can be used by other programming languages to call the API functions.
+There are demos in VB and .NET available, but the principle is the same.
+The lp_solve program is basically another 'demo' program of this api. This program reads the MIP model
+from standard input or from a file and outputs the result back to the console or to a file.
+There are two possible input formats: the 'lp' format and the 'mps' format. This has nothing to do with
+the API. So lp1 = make_lp(0,4) is a totally wrong input for the lp_solve program.
+The lp-format is a 'readable' format of a MIP model. For example:
+
+max: -x1 + 2 x2;
+C1: 2x1 + x2 < 5;
+-4 x1 + 4 x2 <5;
+
+int x2,x1;
+
+This lp-format is the default format of the lp_solve program.
+
+The other format is mps format. This is a totally different format and used by many MIP solvers. This
+format is not very readable for us humans. The same example as above in mps format looks like this:
+
+ROWS
+ N  r_0
+ L  C1
+ L  r_2
+COLUMNS
+    MARK0000  'MARKER'                 'INTORG'
+    x1        r_0                  1   C1                   2
+    x1        r_2                 -4
+    x2        r_0                 -2   C1                   1
+    x2        r_2                  4
+    MARK0001  'MARKER'                 'INTEND'
+RHS
+    RHS       C1                   5   r_2                  5
+ENDATA
+
+To enable this input format in the lp_solve program, use the -mps option.
+
+The lp_solve program has many other options to control many other things like the amount of data
+to output, if scaling must be used and so on.
+
+There are two other 'demo' programs: lp2mps and mps2lp. They convert model files from one format
+to the other.
+
+The lp_solve, lp2mps and mps2lp programs all use API calls of the lp_solve library to perform
+their actions.
