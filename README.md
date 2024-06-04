@@ -40,6 +40,6 @@ Where -lp, -dia etc are the feature groups:
 
 ## Experiments
 rt_pred.py contains the code for running time prediction. sat_pred.py contains the code for satisfiability prediction. Both are using submitit for execution on a SLURM cluster.
-For algorithm selection, the scenarios are available in the aslib directory. The AutoFolio code is available at [https://github.com/hadarshavit/AutoFolio].
+For algorithm selection, the scenarios are available in the aslib directory. The AutoFolio code is available at https://github.com/hadarshavit/AutoFolio.
 ## Contact
 To contact us, please send an email to [shavit@aim.rwth-aachen.de](mailto:shavit@aim.rwth-aachen.de)
