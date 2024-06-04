@@ -37,5 +37,9 @@ Where -lp, -dia etc are the feature groups:
   The input INFILE is a DIMACS CNF file. NOTE: currently, only raw CNF files are supported, and not compressed one (like .cnf.xz)
   The output is a CSV file containing the features for one instance.
 
+
+## Experiments
+rt_pred.py contains the code for running time prediction. sat_pred.py contains the code for satisfiability prediction. Both are using submitit for execution on a SLURM cluster.
+For algorithm selection, the scenarios are available in the aslib directory. The AutoFolio code is available at [https://github.com/hadarshavit/AutoFolio].
 ## Contact
 To contact us, please send an email to [shavit@aim.rwth-aachen.de](mailto:shavit@aim.rwth-aachen.de)
