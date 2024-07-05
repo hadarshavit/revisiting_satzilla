@@ -2,7 +2,7 @@
 # Revisiting SATZilla in 2024
 
   
-Code for the paper: "Revisiting SATZilla Features in 2024" Submitted to SAT 2024.
+Code for the paper: "Revisiting SATZilla Features in 2024" by Hadar Shavit and Holger H. Hoos accepted to SAT 2024.
 
 ## Abstract
 Boolean satisfiability (SAT) is an $\mathcal{NP}$-complete problem with important applications, notably in hardware and software verification.
