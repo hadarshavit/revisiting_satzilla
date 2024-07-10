@@ -131,7 +131,7 @@ namespace varsat
 		}
 		else
 		{
-			Clause *c = Clause::Clause_new(ps, false);
+			Clause *c = Clause_new(ps, false);
 			clauses.push(c);
 			attachClause(*c);
 
@@ -720,7 +720,7 @@ namespace varsat
 				}
 				else
 				{
-					Clause *c = Clause::Clause_new(learnt_clause, true);
+					Clause *c = Clause_new(learnt_clause, true);
 					learnts.push(c);
 					attachClause(*c);
 					claBumpActivity(*c);

@@ -121,15 +121,13 @@ public:
     Clause(const V& ps, bool learnt) {
         size_etc = (ps.size() << 3) | (uint32_t)learnt;
         for (int i = 0; i < ps.size(); i++) data[i] = ps[i];
-        if (learnt) extra.act = 0; else calcAbstraction(); };
+        if (learnt) extra.act = 0; else calcAbstraction(); }
 
     // -- use this function instead:
     template<class V>
-    static Clause* Clause_new(const V& ps, bool learnt = false) {
-        assert(sizeof(Lit)      == sizeof(uint32_t));
-        assert(sizeof(float)    == sizeof(uint32_t));
-        void* mem = malloc(sizeof(Clause) + sizeof(uint32_t)*(ps.size()));
-        return new (mem) Clause(ps, learnt); };
+    friend Clause* Clause_new(const V& ps);
+    template<class V>
+    friend Clause* Clause_new(const V& ps, bool learnt);
 
     int          size        ()      const   { return size_etc >> 3; }
     void         shrink      (int i)         { assert(i <= size()); size_etc = (((size_etc >> 3) - i) << 3) | (size_etc & 7); }
@@ -153,6 +151,15 @@ public:
 };
 
 
+    template<class V>
+    inline Clause* Clause_new(const V& ps, bool learnt) {
+        assert(sizeof(Lit)      == sizeof(uint32_t));
+        assert(sizeof(float)    == sizeof(uint32_t));
+        void* mem = malloc(sizeof(Clause) + sizeof(uint32_t)*(ps.size()));
+        return new (mem) Clause(ps, learnt); }
+
+    template<class V>
+    inline Clause* Clause_new(const V& ps) { return Clause_new(ps, false); }
 /*_________________________________________________________________________________________________
 |
 |  subsumes : (other : const Clause&)  ->  Lit
