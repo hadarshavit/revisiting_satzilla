@@ -18,7 +18,7 @@ EXECNAME = features
 
 INCLUDE =
 
-LIB = -l:liblpk5.a -lvarsat 
+LIB = -l:liblpk5.a -lvarsat -ldl  -lz
 
 LIBDIRS = -Llp_solve_5.0 -LVARSAT 
 
@@ -53,7 +53,7 @@ feature:
 .PHONY: clean depend again
 
 clean-all:
-	rm -f obj/*.o features;  cd VARSAT; make clean ; cd ../lp_solve_4.0;  make clean
+	rm -f obj/*.o features;  cd VARSAT; make clean ; cd ../lp_solve_5.0;  make clean
 
 clean:
 	rm -f obj/*.o features
