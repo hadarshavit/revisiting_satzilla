@@ -10,7 +10,7 @@ using namespace std;
 Stopwatch gSW;
 int gTimeOut;
 double preTime;
-int OrigNumVars, OrigNumClauses;
+int OrigNumVars = -1, OrigNumClauses = -1;
 double myTime = 0.0;
 const char *mypath;
 
@@ -184,27 +184,77 @@ int main(int argc, char **argv)
   }
   char chbuf;
   char strbuf[1024];
-  infile.get(chbuf);
-  while (chbuf != 'p')
+
+  bool weighted_cnf = false;
+  bool first_line = true;
+  char wordbuf[256];
+
+  string tmp_outfile_name = "tmp_wcnf_to_cnf.cnf";  // Create a temporary cnf file for the other programs to read
+  while (infile >> wordbuf)
   {
-    infile.ignore(1000, '\n');
-    infile.get(chbuf);
-    if (!infile)
+    if (wordbuf[0] == 'p')  // CNF formated
     {
-      fprintf(stderr, "c ERROR: Premature EOF reached in %s\n", filename);
-      exit(1);
+        infile >> strbuf; // "cnf"
+        infile >> OrigNumVars >> OrigNumClauses;  // line with p is the start, states file type then number of vars and number of clauses
+        break;
+    }
+    else if (strstr(wordbuf, "c{"))  // MaxSat declaration line
+    {
+        weighted_cnf = true;
+        while (infile >> wordbuf)  // read until description is done
+        {
+            if (strstr(wordbuf, "c}"))  // Final descriptive word, break
+            {
+                fprintf(stderr, "breaking on line %s\n", wordbuf);
+                break;
+            }
+            if (OrigNumVars == -1 && strstr(wordbuf, "nvars\":"))
+            {
+                infile >> OrigNumVars; 
+            }
+            else if (OrigNumClauses == -1 && strstr(wordbuf, "ncls\":"))
+            {
+                infile >> OrigNumClauses;  
+            } // TODO: there are many other values that we could read
+        }
+        // TODO: Extracted the meta information, now format the rest of the file from wcnf to cnf
+        std::ofstream tmp_outfile;
+        tmp_outfile.open(tmp_outfile_name);
+        tmp_outfile << "p cnf " << OrigNumVars << " " << OrigNumClauses << endl;
+        for( std::string line; getline( infile, line ); )
+        {
+            // skip weight lines, comment lines and empty lines
+            // NOTE: What does a line starting with "h" do?
+            if (line[0] == 'w' || line[0] == 'c' || line.find_first_not_of(' ') == std::string::npos) { 
+                continue;
+            }
+            int white_space_n = line.find_first_of(' ');
+            // Remove the weight from the line, or the 'h' character (What it be doin tho?)
+            line = line.substr(line.find_first_of(" \t") + 1);
+            tmp_outfile << line << endl;
+        }
+        tmp_outfile.close();
+        // For all other programs, our temporary file should be considered the inputfile
+        filename = tmp_outfile_name.data();
+        break;
     }
   }
-  infile >> strbuf; // "cnf"
-  infile >> OrigNumVars >> OrigNumClauses;
+
+  if (OrigNumVars == -1 || OrigNumClauses == -1)  // We did not find a value before EOF
+  {
+    fprintf(stderr, "\nc ERROR: Initial read did not find number of vars and clauses, reached Premature EOF in %s ", filename);
+    exit(1);
+  }
+
   if (DEB)
-    printf("c Orignal number of varibales is %d, number of clauses is %d \n", OrigNumVars, OrigNumClauses);
+    printf("c Orignal number of variables is %d, number of clauses is %d \n", OrigNumVars, OrigNumClauses);
   bool solved = false;
   if (DEB)
     printf("c run SatELite as pre-processor ... \n");
   int returnVal;
   if (DEB)
     printf("c Input file is: %s. Output file is %s\n", filename, outfile);
+  // TODO: Enable the below code to take in a file stream instead of a file name
   returnVal = SolverSatelite->execute(filename, 35);
   
   if (returnVal == 10 || returnVal == 20)
@@ -304,6 +354,9 @@ int main(int argc, char **argv)
 
   delete sat;
   remove(outfile);
+  if (weighted_cnf == true){
+    remove(tmp_outfile_name.data());
+  }
 
   return 0;
 }

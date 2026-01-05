@@ -426,6 +426,7 @@ void SATinstance::outputAssignment()
 	sprintf(vlineFilename, "%s", P_tmpdir);
 	strcat(vlineFilename, "/XXXXXX");
 	printf("Assignment file name: %s", vlineFilename);
+    // TODO: Replace with mkstemp or mkdtemp for file creation instead
 	vlineFilename = mktemp(vlineFilename);
 	if ((vlineFile = fopen(vlineFilename, "w")) == NULL)
 	{
