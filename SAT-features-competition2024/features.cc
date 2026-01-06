@@ -189,7 +189,7 @@ int main(int argc, char **argv)
   bool first_line = true;
   char wordbuf[256];
 
-  string tmp_outfile_name = "tmp_wcnf_to_cnf.cnf";  // Create a temporary cnf file for the other programs to read
+  char tmp_outfile_name[512];  // Create a temporary cnf file for the other programs to read
   while (infile >> wordbuf)
   {
     if (wordbuf[0] == 'p')  // CNF formated
@@ -201,11 +201,13 @@ int main(int argc, char **argv)
     else if (strstr(wordbuf, "c{"))  // MaxSat declaration line
     {
         weighted_cnf = true;
+        sprintf(tmp_outfile_name, "%s", "/tmp");
+        strcat(tmp_outfile_name, "/tmp_wcnf_to_cnf_XXXXXX.cnf");
+        mkstemp(tmp_outfile_name);
         while (infile >> wordbuf)  // read until description is done
         {
             if (strstr(wordbuf, "c}"))  // Final descriptive word, break
             {
-                fprintf(stderr, "breaking on line %s\n", wordbuf);
                 break;
             }
             if (OrigNumVars == -1 && strstr(wordbuf, "nvars\":"))
@@ -235,7 +237,7 @@ int main(int argc, char **argv)
         }
         tmp_outfile.close();
         // For all other programs, our temporary file should be considered the inputfile
-        filename = tmp_outfile_name.data();
+        filename = tmp_outfile_name;
         break;
     }
   }
@@ -355,7 +357,7 @@ int main(int argc, char **argv)
   delete sat;
   remove(outfile);
   if (weighted_cnf == true){
-    remove(tmp_outfile_name.data());
+    remove(tmp_outfile_name);
   }
 
   return 0;
