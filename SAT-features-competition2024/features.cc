@@ -166,11 +166,9 @@ int main(int argc, char **argv)
   char *filename;
   char outfile[512];
   filename = argv[nextParam++];
-
   sprintf(outfile, "%s", "/tmp");
   strcat(outfile, "/outputXXXXXX");
   mkstemp(outfile);
-
   gTimeOut = getTimeOut();
   BuildSolvers("123456", outfile);
   gSW.Start();
@@ -202,8 +200,10 @@ int main(int argc, char **argv)
     {
         weighted_cnf = true;
         sprintf(tmp_outfile_name, "%s", "/tmp");
-        strcat(tmp_outfile_name, "/tmp_wcnf_to_cnf_XXXXXX.cnf");
+        strcat(tmp_outfile_name, "/tmp_wcnf_to_cnf_XXXXXX");
         mkstemp(tmp_outfile_name);
+        if (DEB)
+            printf("c Processing WCNF file to CNF... \n");
         while (infile >> wordbuf)  // read until description is done
         {
             if (strstr(wordbuf, "c}"))  // Final descriptive word, break
