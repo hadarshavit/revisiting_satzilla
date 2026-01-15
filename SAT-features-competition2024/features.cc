@@ -204,6 +204,7 @@ int main(int argc, char **argv)
         mkstemp(tmp_outfile_name);
         if (DEB)
             printf("c Processing WCNF file to CNF... \n");
+        preTime = gSW.TotalLap() - myTime;
         while (infile >> wordbuf)  // read until description is done
         {
             if (strstr(wordbuf, "c}"))  // Final descriptive word, break
@@ -238,6 +239,9 @@ int main(int argc, char **argv)
         tmp_outfile.close();
         // For all other programs, our temporary file should be considered the inputfile
         filename = tmp_outfile_name;
+        double wcnf_process_time = gSW.TotalLap() - preTime;
+        if (DEB)
+            printf("c WCNF processing time: %f \n", wcnf_process_time);
         break;
     }
   }
@@ -256,40 +260,56 @@ int main(int argc, char **argv)
   int returnVal;
   if (DEB)
     printf("c Input file is: %s. Output file is %s\n", filename, outfile);
-  // TODO: Enable the below code to take in a file stream instead of a file name
-  returnVal = SolverSatelite->execute(filename, 35);
-  
-  if (returnVal == 10 || returnVal == 20)
-  {
-    if (DEB)
-      printf("c This instance is solved by pre-processor with %d!\n", returnVal);
-    solved = true;
-    doComp = false;
-  }
 
-  SolverSatelite->cleanup();
+  // We can perhaps disable the pre-processor for WCNF to speed up feature computation? -> Looks currently to only be a small slowdown
   SATinstance *sat;
-  if (returnVal == 137)
-  {
-      sat = new SATinstance(filename, doComp);
-  }
-  else
-  {
-      // SATinstance* sat = new SATinstance(outfile);
-    sat = new SATinstance(outfile, doComp);
-    prep_sucessfull = true;
-  }
-  preTime = gSW.TotalLap() - myTime;
-  sat->start_computation(solved, preTime);
+  if (!weighted_cnf){
+    preTime = gSW.TotalLap() - myTime;
+    returnVal = SolverSatelite->execute(filename, 35);
+    myTime = gSW.TotalLap();
+    if (DEB)
+        printf("c SatELite pre-process time is %f second\n", myTime - preTime);
+    
+    if (returnVal == 10 || returnVal == 20)
+    {
+        if (DEB)
+        printf("c This instance is solved by pre-processor with %d!\n", returnVal);
+        solved = true;
+        doComp = false;
+    }
 
-  myTime = gSW.TotalLap();
-  if (DEB)
-    printf("c Pre-process time is %f second\n", preTime);
+    SolverSatelite->cleanup();
+    if (returnVal == 137)
+    {
+        sat = new SATinstance(filename, doComp);
+    }
+    else
+    {
+        sat = new SATinstance(outfile, doComp);
+        prep_sucessfull = true;
+    }
+  }
+  else {
+    sat = new SATinstance(filename, doComp);
+    //prep_sucessfull = true;
+  }
+
+  if (weighted_cnf == false){  // Pre processing mainly makes sense for regular SAT, although the potential formula simplification is usefull.
+    preTime = gSW.TotalLap() - myTime;
+    sat->start_computation(solved, preTime);
+
+    myTime = gSW.TotalLap();
+    if (DEB)
+        printf("c Pre-process time is %f second\n", preTime);
+  }
 
   if (doBase && letsgo)
   {
-    returnVal = sat->computeFeatures(doComp);
-    //   cout <<sat->getNumVals()<<"  "<< sat->getNumClaus()<<endl;
+    preTime = gSW.TotalLap() - myTime;
+    returnVal = sat->computeFeatures(doComp, !weighted_cnf);
+    double feature_time = gSW.TotalLap() - preTime;
+    if (DEB)
+        printf("c Base features time is %f second\n", feature_time);
     if (sat->getNumVals() == 0 || sat->getNumClaus() == 0)
     {
       doComp = false;

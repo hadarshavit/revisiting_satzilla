@@ -149,7 +149,7 @@ public:
   SATinstance(const char *filename, bool doComp, long seed = 0);
   ~SATinstance();
 
-  int computeFeatures(bool doComp);
+  int computeFeatures(bool doComp, bool doClauseGraphFeatures);
   void clauseGraphFeatures(bool realCC);
   int sp(bool doComp);
   int compute_lp(bool doComp);

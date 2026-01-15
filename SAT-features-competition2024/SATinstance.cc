@@ -567,9 +567,8 @@ void SATinstance::start_computation(bool preprocessor_solved, float pre_time)
 	solved = -512;
 }
 
-int SATinstance::computeFeatures(bool doComp)
+int SATinstance::computeFeatures(bool doComp, bool doClauseGraphFeatures)
 {
-
 	//  testBackTrack();
 	// Stopwatch sw;
 	if (DEB)
@@ -927,9 +926,11 @@ int SATinstance::computeFeatures(bool doComp)
 	}
 
 	myTime = gSW.TotalLap();
-	if (DEB)
-		p("c Clause graph...");
-	clauseGraphFeatures(false);
+    if (doClauseGraphFeatures){
+        if (DEB)
+            p("c Clause graph...");
+        clauseGraphFeatures(false);
+    }
 	if (DEB)
 		p("c Done with base features");
 
